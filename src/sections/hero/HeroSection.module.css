@@ -1,0 +1,29 @@
+.heroSection {
+  display: flex;
+}
+
+.heroTitle {
+  width: 480px;
+  position: relative;
+  font-size: 48px;
+  font-family: var(--font-inter);
+  color: #404040;
+  text-align: left;
+  display: inline-block;
+  line-height: 1.2;
+  margin: 100px;
+}
+
+.heroSubtitle {
+  color: #404040;
+}
+
+.heroVisual {
+  height: 20%;
+}
+
+.mainImage {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+}

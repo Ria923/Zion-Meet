@@ -1,0 +1,17 @@
+.button {
+  background: linear-gradient(45deg, #8e59e2, #ffd54f);
+  color: #ededec;
+  border: none;
+  border-radius: 100px;
+  width: 221px;
+  height: 59px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 4px solid (45deg, #67438f, #dda927);
+}
+
+.button:active {
+  background: linear-gradient(45deg, #67438f, #dda927);
+}

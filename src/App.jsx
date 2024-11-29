@@ -1,0 +1,29 @@
+import React from 'react';
+import './App.css'; 
+import HeroSection from './sections/hero/HeroSection';
+import About from './sections/about/About';
+import Features from './sections/features/Features';
+import Recomedened from './sections/recomeneded/Recomeneded';
+import Contract from './sections/contract/Contract';
+import ContactUs from './sections/contactus/ContactUs';
+import Inquiry from './sections/inquiry/Inquiry';
+import Footer from './sections/footer/Footer';
+
+
+function App() {
+
+  return (
+    <div>
+      <HeroSection />
+      <About />
+      <Features />
+      <Recomedened />
+      <Contract />
+      <ContactUs />
+      <Inquiry />
+      <Footer />
+    </div>
+  )
+}
+
+export default App
