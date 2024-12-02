@@ -1,29 +1,68 @@
-.heroSection {
-  display: flex;
+.gridContainer {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr; /* 三列佈局 */
+  grid-template-areas: 
+    "menu main main"
+    "menu subtitle visual"; /* 定義佈局區域 */
+  height: 100vh; /* 佔滿整個視窗高度 */
+  width: 100%; /* 佔滿整個視窗寬度 */
+  position: fixed; /* 固定背景位置 */
+  top: 0;
+  left: 0;
+  position: relative;
 }
 
+.heroSection {
+  grid-area: main; /* 將 heroSection 放入主區域 */
+  display: flex;
+  flex-direction: column; /* 垂直方向排列 */
+  align-items: flex-start; /* 内容靠左对齐 */
+  
+}
+
+.heroContent{
+  grid-area: subtitle;
+  flex-direction: column; /* 确保子元素按列排列 */
+  align-items: flex-start; /* 所有子元素靠左 */
+}
+
+.heroButton{
+  grid-area: subtitle;
+  margin-top: 20px; 
+  align-self: flex-start; 
+}
+
+
 .heroTitle {
+  grid-area: main;
   width: 480px;
-  position: relative;
   font-size: 48px;
   font-family: var(--font-inter);
   color: #404040;
   text-align: left;
-  display: inline-block;
   line-height: 1.2;
-  margin: 100px;
+  margin: 100px 0 20px 0;
 }
 
 .heroSubtitle {
-  color: #404040;
+  grid-area: subtitle;
+  display: flex;
+  text-align: left; /* 确保文字内容靠左 */
 }
+
+
 
 .heroVisual {
-  height: 20%;
+  grid-area: visual;
+  height: 100%; 
+  width: 100%; 
 }
 
-.mainImage {
-  margin-top: 80px;
-  width: 100%;
-  height: 100%;
+.mainImage{
+  position: absolute; 
+  top: 250px; /* 距离父容器顶部 */
+  left: 450px; /* 距离父容器左侧 */
+  height: auto;
+  width: 70%;
+  object-fit: contain; /* 保持比例，不裁剪 */
 }

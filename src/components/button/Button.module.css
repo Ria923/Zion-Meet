@@ -1,5 +1,5 @@
 .button {
-  background: linear-gradient(45deg, #8e59e2, #ffd54f);
+  background: linear-gradient(45deg, #67438f, #dda927);
   color: #ededec;
   border: none;
   border-radius: 100px;
@@ -9,8 +9,7 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  outline: 3px solid (85deg, #67438f, #dda927);
-  padding: 10px;
+  padding: 10px 10px 10px 13px;
 }
 
 
