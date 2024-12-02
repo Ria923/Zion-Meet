@@ -7,9 +7,8 @@
   height: 100vh; /* 佔滿整個視窗高度 */
   width: 100%; /* 佔滿整個視窗寬度 */
   position: fixed; /* 固定背景位置 */
-  top: 0;
-  left: 0;
-  position: relative;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .heroSection {
@@ -17,13 +16,14 @@
   display: flex;
   flex-direction: column; /* 垂直方向排列 */
   align-items: flex-start; /* 内容靠左对齐 */
-  
+
 }
 
 .heroContent{
+  display: flex;
   grid-area: subtitle;
-  flex-direction: column; /* 确保子元素按列排列 */
-  align-items: flex-start; /* 所有子元素靠左 */
+  flex-direction: column; 
+  
 }
 
 .heroButton{
@@ -63,6 +63,6 @@
   top: 250px; /* 距离父容器顶部 */
   left: 450px; /* 距离父容器左侧 */
   height: auto;
-  width: 70%;
+  width: 45%;
   object-fit: contain; /* 保持比例，不裁剪 */
 }

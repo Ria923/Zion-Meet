@@ -10,8 +10,6 @@ const GlobalBackground = ({ children, className = "" }) => {
       <div className={styles.column}></div>
       {/* 右側漸層背景 */}
       <div className={styles.gradientColumn}></div>
-      {/* 插入 children */}
-      <div className={styles.contentContainer}>{children}</div>
     </div>
   );
 };
