@@ -9,9 +9,13 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  outline: 4px solid (45deg, #67438f, #dda927);
+  outline: 3px solid (85deg, #67438f, #dda927);
+  padding: 10px;
 }
 
-.button:active {
-  background: linear-gradient(45deg, #67438f, #dda927);
+
+.icon {
+  margin-right: 5px; /* 與文字的間距 */
+  width: 16px; /* 圖標寬度 */
+  height: 16px; /* 圖標高度 */
 }

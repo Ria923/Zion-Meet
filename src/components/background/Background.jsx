@@ -1,5 +1,5 @@
 import React from "react";
-import "./Background.module.css"; // 正確導入 CSS 模組
+import styles from"./Background.module.css"; // 正確導入 CSS 模組
 
 function GlobalBackground() {
   return (

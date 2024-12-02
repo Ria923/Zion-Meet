@@ -1,7 +1,7 @@
 /* 定義全局網格容器的樣式 */
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 分成三列 */
+  grid-template-columns: 200px 1fr 5px; /* 分成三列 */
   height: 100vh; /* 佔滿整個視窗高度 */
   width: 100%; /* 佔滿整個視窗寬度 */
   position: fixed; /* 固定背景位置 */
