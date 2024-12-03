@@ -3,10 +3,11 @@ import HeroSectionstyles from "./HeroSection.module.css";
 import Button from "../../components/button/Button";
 import mainImage from "../../assets/imges/hero/maincomputer.png";
 
-const HeroSection = () => { 
+const HeroSection = () => {
   return (
     <div className={HeroSectionstyles.gridContainer}>
       <section className={HeroSectionstyles.heroSection}>
+        <div className={HeroSectionstyles.heroMenu}></div>
         <div className={HeroSectionstyles.heroContent}>
           <h1 className={HeroSectionstyles.heroTitle}>
             会議がもっと簡単に、
