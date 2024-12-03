@@ -1,18 +1,14 @@
 import React from "react";
 import Headerstyles from "./Header.module.css";
-import mainImage from "../../assets/imges/hero/maincomputer.png";
+import logoImage from "../../assets/imges/header/LOGO.png"; // 修正文件夾名稱
 
 const Header = () => {
   return (
-    
-  <div className={Headerstyles.logoImage}>          
-    <img
-    className={HeroSectionstyles.mainImage}
-    src={mainImage}
-    alt="illustration"
-  />
-  </div>;
-
-)};
+    <div className={Headerstyles.headerLogo}>
+      <img className={Headerstyles.logoImage} src={logoImage} alt="LOGO" />{" "}
+      {/* 修正變數名 */}
+    </div>
+  );
+};
 
 export default Header;
