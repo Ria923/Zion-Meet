@@ -5,6 +5,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-scrollbar: none; /* 隱藏滾動條 */
+  }
+  
 }
 
 body {
