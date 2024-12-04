@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <GlobalBackground />
+      <Header />
 
       <main>
-        <Header />
         <HeroSection />
         <About />
         <Features />

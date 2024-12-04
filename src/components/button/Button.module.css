@@ -9,11 +9,11 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  padding: 10px 10px 10px 13px;
+  padding: 15px 15px 15px 18px;
 }
 
-
 .icon {
+  margin-left: 5px;
   margin-right: 5px; /* 與文字的間距 */
   width: 16px; /* 圖標寬度 */
   height: 16px; /* 圖標高度 */
