@@ -12,24 +12,27 @@ import Footer from "./sections/footer/Footer";
 
 function App() {
   return (
-    <div className="gridContainer">
-      <div className="header">
-        <Header />
+    <div className="app">
+      <div className="gridContainer">
+        <div className="gradientColumn"></div>
+        <div className="header">
+          <Header />
+        </div>
+
+        <div className="menu"></div>
+        <div className="column">
+          <main>
+            <HeroSection />
+            <About />
+            <Features />
+            <Recomedened />
+            <Contract />
+            <ContactUs />
+            <Inquiry />
+            <Footer />
+          </main>
+        </div>
       </div>
-      <div className="column"></div>
-      <div className="column">
-        <main>
-          <HeroSection />
-          <About />
-          <Features />
-          <Recomedened />
-          <Contract />
-          <ContactUs />
-          <Inquiry />
-          <Footer />
-        </main>
-      </div>
-      <div className="gradientColumn"></div>
     </div>
   );
 }

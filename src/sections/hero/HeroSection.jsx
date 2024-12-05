@@ -1,13 +1,11 @@
 import React from "react";
 import HeroSectionstyles from "./HeroSection.module.css";
 import Button from "../../components/button/Button";
-import mainImage from "../../assets/imges/hero/maincomputer.png";
 
 const HeroSection = () => {
   return (
     <div className={HeroSectionstyles.gridContainer}>
       <section className={HeroSectionstyles.heroSection}>
-        <div className={HeroSectionstyles.heroMenu}></div>
         <div className={HeroSectionstyles.heroContent}>
           <h1 className={HeroSectionstyles.heroTitle}>
             会議がもっと簡単に、
@@ -21,12 +19,6 @@ const HeroSection = () => {
           <Button href="#" className={HeroSectionstyles.heroButton}>
             お問い合わせ
           </Button>
-
-          <img
-            className={HeroSectionstyles.mainImage}
-            src={mainImage}
-            alt="illustration"
-          />
         </div>
       </section>
     </div>

@@ -3,20 +3,21 @@
   height: 1035px;
 }
 
-.heroSection {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-  flex: 200px;
+.heroContent {
+  background-image: url("../../assets/imges/hero/maincomputer.png");
+  background-size: contain; /* 確保圖片適應容器 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  background-position: center; /* 居中圖片 */
+}
+
+.logoImage {
+  margin-bottom: 135px;
+  justify-content: center;
+  width: 67px;
 }
 
 .heroMenu {
   width: 300px;
-}
-
-.heroContent {
-  width: 600px;
-  z-index: 9999;
 }
 
 .heroTitle {
@@ -29,7 +30,6 @@
 
 .heroSubtitle {
   font-size: 14px;
-  position: relative;
   color: #404040;
   margin-top: 5px;
   font-style: inter;
@@ -60,17 +60,4 @@
     #f5f2d2 83%,
     #ededec 99%
   );
-}
-
-.mainImage {
-  width: 80%;
-  height: auto;
-  z-index: -1;
-}
-
-@media (min-aspect-ratio: 90/100) {
-  .mainImage {
-    background-image: url("../../assets/imges/hero/maincomputer.png");
-    background-size: 20%;
-  }
 }
