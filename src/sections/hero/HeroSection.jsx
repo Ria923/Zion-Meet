@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSectionstyles from "./HeroSection.module.css";
 import Button from "../../components/button/Button";
+import mainImage from "../../assets/imges/hero/maincomputer.png";
 
 const HeroSection = () => {
   return (
@@ -19,6 +20,9 @@ const HeroSection = () => {
           <Button href="#" className={HeroSectionstyles.heroButton}>
             お問い合わせ
           </Button>
+        </div>
+        <div className={HeroSectionstyles.mainImage}>
+
         </div>
       </section>
     </div>
