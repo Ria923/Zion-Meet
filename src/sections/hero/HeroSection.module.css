@@ -64,6 +64,46 @@
   );
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    width: 900px;
+    margin: 0 0 0 -10px;
+    justify-content: flex-end; /* 將圖片置中 */
+    z-index: 1; /* 設定圖片位於文字下方 */
+  }
+
+  .mainImage {
+    width: 750px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* 確保圖片層級低於文字 */
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: flex;
+    width: 1150px;
+    margin: 0 0 0 10px;
+    justify-content: flex-end; /* 將圖片置中 */
+    z-index: 1; /* 設定圖片位於文字下方 */
+  }
+
+  .mainImage {
+    width: 1000px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* 確保圖片層級低於文字 */
+  }
+}
+
+
+
 @media screen and (min-width: 1440px) {
   .main {
     display: flex;
@@ -82,17 +122,36 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2000px) {
   .main {
     display: flex;
-    width: 1150px;
+    width: 1600px;
     margin: 0 0 0 10px;
     justify-content: flex-end; /* 將圖片置中 */
     z-index: 1; /* 設定圖片位於文字下方 */
   }
 
   .mainImage {
-    width: 1550px;
+    width: 1400px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* 確保圖片層級低於文字 */
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .main {
+    display: flex;
+    width: 2000px;
+    margin: 0 0 0 10px;
+    justify-content: flex-end; /* 將圖片置中 */
+    z-index: 1; /* 設定圖片位於文字下方 */
+  }
+
+  .mainImage {
+    width: 1560px;
     height: auto;
     object-fit: cover;
     position: relative;
