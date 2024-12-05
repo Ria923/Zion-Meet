@@ -23,6 +23,7 @@ body {
     "header header line"
     "menu content line";
   grid-template-columns: 300px 1fr 8px;
+
   height: 100vh;
   width: 100%;
 }
