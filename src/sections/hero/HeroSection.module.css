@@ -1,23 +1,27 @@
+/*----------------------------------------
+	Hero Section with Overlapping Effect
+----------------------------------------*/
+
 .gridContainer {
   max-width: 100%;
   height: 1035px;
+  position: relative; /* 為內部元素提供相對定位基準 */
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column; /* 確保內容在上，圖片在下 */
+  position: relative; /* 為子元素提供定位基準 */
+  top: 40px; 
+  width: calc(50% + 450px);
 }
 
 .heroContent {
-  background-image: url("../../assets/imges/hero/maincomputer.png");
-  background-size: contain; /* 確保圖片適應容器 */
-  background-repeat: no-repeat; /* 防止圖片重複 */
-  background-position: center; /* 居中圖片 */
-}
+  padding: 30px;
+  z-index: 2; /* 提高層級，讓文字區塊位於圖片之上 */
+  position: relative; /* 為重疊效果提供定位基準 */
 
-.logoImage {
-  margin-bottom: 135px;
-  justify-content: center;
-  width: 67px;
-}
-
-.heroMenu {
-  width: 300px;
+  margin-bottom: -150px; /* 負邊距，實現文字與圖片的重疊效果 */
 }
 
 .heroTitle {
@@ -60,4 +64,20 @@
     #f5f2d2 83%,
     #ededec 99%
   );
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* 將圖片置中 */
+  margin-right: -230px;
+  margin-top: 0; /* 清除額外間距，保持圖片緊接文字 */
+  z-index: 1; /* 設定圖片位於文字下方 */
+}
+
+.mainImage {
+  width: 1200px;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* 確保圖片層級低於文字 */
 }
