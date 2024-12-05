@@ -7,7 +7,7 @@
   display: flex;
   gap: 10px;
   flex-direction: row;
-  flex: 0 0 auto;
+  flex: 200px;
 }
 
 .heroMenu {
@@ -62,14 +62,15 @@
   );
 }
 
-.heroVisual {
-  width: 60%;
+.mainImage {
+  width: 80%;
+  height: auto;
+  z-index: -1;
 }
 
-.mainImage {
-  position: absolute;
-  left: 410px;
-  top: 360px;
-  width: 900px;
-  height: auto;
+@media (min-aspect-ratio: 90/100) {
+  .mainImage {
+    background-image: url("../../assets/imges/hero/maincomputer.png");
+    background-size: 20%;
+  }
 }

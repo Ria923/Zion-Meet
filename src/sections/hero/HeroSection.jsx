@@ -21,9 +21,7 @@ const HeroSection = () => {
           <Button href="#" className={HeroSectionstyles.heroButton}>
             お問い合わせ
           </Button>
-        </div>
 
-        <div className={HeroSectionstyles.heroVisual}>
           <img
             className={HeroSectionstyles.mainImage}
             src={mainImage}

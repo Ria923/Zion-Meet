@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import GlobalBackground from "./components/background/Background";
 import Header from "./sections/header/Header";
 import HeroSection from "./sections/hero/HeroSection";
 import About from "./sections/about/About";
@@ -13,21 +12,25 @@ import Footer from "./sections/footer/Footer";
 
 function App() {
   return (
-    <>
-      <GlobalBackground />
-      <Header />
-
-      <main>
-        <HeroSection />
-        <About />
-        <Features />
-        <Recomedened />
-        <Contract />
-        <ContactUs />
-        <Inquiry />
-        <Footer />
-      </main>
-    </>
+    <div className="gridContainer">
+      <div className="header">
+        <Header />
+      </div>
+      <div className="column"></div>
+      <div className="column">
+        <main>
+          <HeroSection />
+          <About />
+          <Features />
+          <Recomedened />
+          <Contract />
+          <ContactUs />
+          <Inquiry />
+          <Footer />
+        </main>
+      </div>
+      <div className="gradientColumn"></div>
+    </div>
   );
 }
 
