@@ -13,6 +13,16 @@ body {
   padding: 0;
 }
 
+.bacgrond {
+  height: 1024px;
+  background-image: url("./assets/imges/hero/herobackgroud.svg"); /* 從上層到下層，圖片順序依次疊加 */
+  background-position: center top; /* 每個圖片的位置 */
+  background-repeat: no-repeat; /* 每個圖片的重複方式 */
+  background-size: auto 200%; /* 每個圖片的大小 */
+  position: relative;
+  z-index: 2;
+}
+
 .menu {
   width: 800px;
 }

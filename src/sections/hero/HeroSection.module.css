@@ -64,17 +64,17 @@
   );
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .main {
     display: flex;
-    width: 1150px;
-    margin: 0 0 0 10px;
+    width: 1050px;
+    margin: 0 0 0 80px;
     justify-content: flex-end; /* 將圖片置中 */
     z-index: 1; /* 設定圖片位於文字下方 */
   }
 
   .mainImage {
-    width: 1050px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     position: relative;
@@ -82,17 +82,18 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1441px) {
   .main {
     display: flex;
-    width: 1150px;
-    margin: 0 0 0 10px;
+    width: 100%; /* 使用百分比來調整 */
+    max-width: 2500px; /* 最大寬度限制 */
+    margin: 0 0 0 100px;
     justify-content: flex-end; /* 將圖片置中 */
     z-index: 1; /* 設定圖片位於文字下方 */
   }
 
   .mainImage {
-    width: 1550px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     position: relative;
