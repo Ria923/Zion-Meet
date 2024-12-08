@@ -13,27 +13,13 @@ body {
   padding: 0;
 }
 
-.bacgrond {
-  height: 1024px;
-  background-image: url("./assets/imges/hero/herobackgroud.svg"); /* 從上層到下層，圖片順序依次疊加 */
-  background-position: center top; /* 每個圖片的位置 */
-  background-repeat: no-repeat; /* 每個圖片的重複方式 */
-  background-size: auto 200%; /* 每個圖片的大小 */
-  position: relative;
-  z-index: 2;
-}
-
-.menu {
-  width: 800px;
-}
-
 .gridContainer {
   display: grid;
   grid-template-areas:
     "header header line"
+    "menu content line"
     "menu content line";
   grid-template-columns: 300px 1fr 8px;
-
   height: 100vh;
   width: 100%;
 }
@@ -48,6 +34,8 @@ body {
 
 .menu {
   grid-area: menu;
+  width: 800px;
+  margin-left: 35px;
 }
 
 .column {
@@ -79,6 +67,5 @@ body {
   right: 0;
   top: 0;
   width: 8px;
-  height: 100vh;
   z-index: -1;
 }
