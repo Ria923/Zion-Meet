@@ -1,0 +1,76 @@
+.menuContainer {
+  margin-top: 184px;
+  width: 224px; /* 容器宽度 */
+  height: auto; /* 高度由内容撑开 */
+  z-index: 2;
+  background: linear-gradient(
+    127deg,
+    rgba(255, 255, 255, 0.4) 14.2%,
+    rgba(255, 255, 255, 0) 103.01%
+  );
+  flex-shrink: 0;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2) inset;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-clip: padding-box;
+  position: fixed;
+  text-align: center;
+}
+
+.divider {
+  width: 167px;
+  border: 0; /* 移除默认的边框样式 */
+  height: 2px; /* 设置分隔线高度 */
+  background: #ededec; /* 分隔线颜色 */
+  margin: 10px auto; /* 水平居中，增加上下间距 */
+}
+
+.title {
+  color: #35003b;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0);
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menuList {
+  list-style: none; /* 移除默认项目符号 */
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  text-align: center; /* 列表项居中 */
+}
+
+.menuList li {
+  padding: 10px 0 0 0; /* 垂直内边距 */
+  color: #35003b;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5; /* 调整行高 */
+  letter-spacing: 1px;
+  text-align: center; /* 水平居中 */
+}
+
+.menuList li::after {
+  content: "•";
+  color: #e6ae20;
+  font-weight: 900;
+  display: block; /* 圆点单独一行 */
+  width: auto;
+  text-align: center; /* 圆点居中 */
+}
+
+.menuList li:last-child {
+  padding-bottom: 20px; /* 清除额外的内边距 */
+}
+
+.menuList li:last-child::after {
+  content: ""; /* 清除内容 */
+  display: none; /* 隐藏伪元素 */
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Menu from "./components/menu/Menu";
 import Header from "./sections/header/Header";
 import HeroSection from "./sections/hero/HeroSection";
 import About from "./sections/about/About";
@@ -13,24 +14,29 @@ import Footer from "./sections/footer/Footer";
 function App() {
   return (
     <div className="app">
-      <div className="gridContainer">
-        <div className="gradientColumn"></div>
-        <div className="header">
-          <Header />
-        </div>
+      <div className="backgrond">
+        <div className="gridContainer">
+          <div className="gradientColumn"></div>
+          <div className="header">
+            <Header />
+          </div>
 
-        <div className="menu"></div>
-        <div className="column">
-          <main>
-            <HeroSection />
-            <About />
-            <Features />
-            <Recomedened />
-            <Contract />
-            <ContactUs />
-            <Inquiry />
-            <Footer />
-          </main>
+          <div className="menu">
+            <Menu />
+          </div>
+
+          <div className="column">
+            <main>
+              <HeroSection />
+              <About />
+              <Features />
+              <Recomedened />
+              <Contract />
+              <ContactUs />
+              <Inquiry />
+              <Footer />
+            </main>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,59 @@
+.AboutTitle {
+  color: #35003b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+
+.Abouttit {
+  color: #333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Abouttit ::after {
+  content: "";
+  stroke-width: 5px;
+  display: block;
+  width: 174px;
+  height: 3px;
+  margin-top: 2px;
+  background: linear-gradient(
+    to right,
+    #6d4799 0%,
+    #805785 7%,
+    #ac7c59 24%,
+    #cb973a 39%,
+    #dfa826 52%,
+    #e6ae20 61%,
+    #e6af24 64%,
+    #e7b532 67%,
+    #e9bd49 71%,
+    #ecca69 75%,
+    #efda93 79%,
+    #f3edc5 82%,
+    #f5f2d2 83%,
+    #ededec 99%
+  );
+}
+
+.Aboutcontant {
+  width: 919px;
+  height: 147px;
+  flex-shrink: 0;
+  color: #404040;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 250% */
+  letter-spacing: 1.68px;
+}

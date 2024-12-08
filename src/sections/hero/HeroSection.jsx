@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSectionstyles from "./HeroSection.module.css";
 import Button from "../../components/button/Button";
-import mainImage from "../../assets/imges/hero/maincomputer.png";
+import mainImage from "../../assets/imges/hero/maincomputer.svg";
 
 const HeroSection = () => {
   return (
@@ -22,7 +22,11 @@ const HeroSection = () => {
           </Button>
         </div>
         <figure className={HeroSectionstyles.main}>
-          <img className={HeroSectionstyles.mainImage} src={mainImage} alt="mainImage" />
+          <img
+            className={HeroSectionstyles.mainImage}
+            src={mainImage}
+            alt="mainImage"
+          />
         </figure>
       </section>
     </div>
