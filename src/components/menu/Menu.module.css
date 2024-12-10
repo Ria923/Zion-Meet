@@ -67,7 +67,7 @@
 }
 
 .menuList li:last-child {
-  padding-bottom: 20px; /* 清除额外的内边距 */
+  padding-bottom: 35px; /* 清除额外的内边距 */
 }
 
 .menuList li:last-child::after {

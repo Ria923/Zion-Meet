@@ -8,13 +8,14 @@ const About = () => {
       <section className={Aboutstyle.AboutSection}>
         <div className={Aboutstyle.AboutContent}>
           <h1 className={Aboutstyle.AboutTitle}>
-            ZION-MEET <span className="Aboutstyle.Abouttit">とは</span>
+            ZION-MEET <span className={Aboutstyle.Abouttit}>とは</span>
             <img
-              ClassName={Aboutstyle.Abouticon}
+              className={Aboutstyle.Abouticon}
               src={Abouticon}
               alt="abouticon"
             />
           </h1>
+
           <p className={Aboutstyle.Aboutcontant}>
             ZION-MEETは、シンプルで効率的な会議システム。
             豊富な機能を低コストで提供し、スムーズなコミュニケーションを実現します。

@@ -1,3 +1,11 @@
+.gridContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px;
+  position: relative; /* 為內部元素提供相對定位基準 */
+}
+
+/* h1 標題樣式 */
 .AboutTitle {
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -7,24 +15,15 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 4.8px;
+  display: inline-block;
+  white-space: nowrap; /* 禁止內容換行 */
 }
 
-.Abouttit {
-  color: #333;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.Abouttit ::after {
+.AboutTitle::after {
   content: "";
-  stroke-width: 5px;
   display: block;
   width: 174px;
-  height: 3px;
+  height: 5px;
   margin-top: 2px;
   background: linear-gradient(
     to right,
@@ -45,6 +44,26 @@
   );
 }
 
+/* span 樣式 */
+.Abouttit {
+  color: #333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline; /* 確保與文字同行 */
+  white-space: nowrap; /* 防止換行 */
+}
+
+/* img 樣式 */
+.Abouticon {
+  display: inline; /* 確保圖片不換行 */
+  vertical-align: middle; /* 圖片與文字垂直對齊 */
+  margin-left: 8px; /* 調整圖片與文字之間的距離 */
+}
+
 .Aboutcontant {
   width: 919px;
   height: 147px;
@@ -54,6 +73,6 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 60px; /* 250% */
+  line-height: 60px;
   letter-spacing: 1.68px;
 }
