@@ -1,15 +1,17 @@
 import React from "react";
-import styles from "./Background.module.css"; // 正確導入 CSS 模組
+import Backgroundstyles from "./Background.module.css";
 
-const GlobalBackground = ({ children, className = "" }) => {
+const GlobalBackground = () => {
   return (
-    <div className={`${styles.gridContainer} ${className}`}>
-      {/* 左側區域 */}
-      <div className={styles.column}></div>
-      {/* 中間區域 */}
-      <div className={styles.column}></div>
-      {/* 右側漸層背景 */}
-      <div className={styles.gradientColumn}></div>
+    <div className={Backgroundstyles.section}>
+      <div className={Backgroundstyles.HeaderHero}></div>
+      <div className={Backgroundstyles.About}></div>
+      <div className={Backgroundstyles.Features}></div>
+      <div className={Backgroundstyles.Recommended}></div>
+      <div className={Backgroundstyles.ContactUs}></div>
+
+      <div className={Backgroundstyles.Inquiry}></div>
+      <div className={Backgroundstyles.Contract}></div>
     </div>
   );
 };

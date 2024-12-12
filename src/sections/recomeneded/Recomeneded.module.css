@@ -10,6 +10,7 @@
 
 /* 标题样式 */
 .RecomenededTitle {
+  margin-top: 100px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Inter;
@@ -50,17 +51,17 @@
   grid-template-columns: repeat(2, 450px); /* 两列 */
   grid-template-rows: repeat(2, 900px); /* 两行，行高自动 */
   gap: 0 15px; /* 网格项之间的间距 */
-  padding: 150px;
+  padding: 0px 0px 0px 80px;
 }
 
 .grid > div:nth-child(1) {
   position: relative;
-  top: 120px;
+  top: 100px;
 }
 
 .grid > div:nth-child(2) {
   position: relative;
-  top: 345px;
+  top: 325px;
 }
 
 .grid > div:nth-child(3) {

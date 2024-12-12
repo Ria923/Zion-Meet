@@ -1,38 +1,55 @@
-/* 定義全局網格容器的樣式 */
-.gridContainer {
-  display: grid;
-  grid-template-columns: 300px 1fr 10px; /* 分成三列 */
-  height: 100vh; /* 佔滿整個視窗高度 */
-  width: 100%; /* 佔滿整個視窗寬度 */
-  position: fixed; /* 固定背景位置 */
-  top: 0;
-  left: 0;
-  z-index: -1; /* 保證在所有內容的下方 */
+.section {
+  position: absolute; /* 讓背景區塊絕對定位 */
+  top: 0; /* 依照需求調整位置 */
+  left: 0; /* 依照需求調整位置 */
+  width: 100%; /* 確保背景區塊佔據整個寬度 */
+  height: 100%; /* 確保背景區塊佔據整個高度 */
+  z-index: -1; /* 讓背景區塊位於其他元素下方 */
 }
 
-/* 左側或中間列的背景 */
-.column {
-  background-color: #ededec; /* 灰色背景，可按需更改 */
+.HeaderHeroSection,
+.About,
+.Features,
+.Recommended,
+.ContactUs,
+.Inquiry,
+.Contract {
+  position: relative; /* 確保背景是相對於區塊定位 */
+  width: 100%; /* 背景寬度填滿 */
+  background-repeat: no-repeat; /* 防止重複背景 */
+  background-size: cover; /* 確保背景圖片覆蓋容器 */
+  background-position: center; /* 背景圖片置中 */
 }
 
-/* 右側垂直漸層背景 */
-.gradientColumn {
-  background: linear-gradient(
-    180deg,
-    #6d4799 0%,
-    #805785 7%,
-    #ac7c59 24%,
-    #cb973a 39%,
-    #dfa826 52%,
-    #e6ae20 61%,
-    #e6af24 64%,
-    #e7b532 67%,
-    #e9bd49 71%,
-    #ecca69 75%,
-    #efda93 79%,
-    #f3edc5 82%,
-    #f5f2d2 83%,
-    #ededec 99%
-  );
-  height: 11925px;
+.HeaderHero {
+  background-image: url(../../assets/imges/hero/herobackgroud.svg);
+  height: 1050px; /* Hero 區域的高度 */
+}
+
+.About {
+  background-image: url(../../assets/imges/about/aboutbackground.svg);
+  height: 100vh; /* About 區域的高度 */
+}
+
+.Features {
+  background-image: url(../../assets/imges/features/featuresbackground.svg);
+  height: 2900px; /* Features 區域的高度 */
+}
+
+.Recommended {
+  height: 2190px; /* Recommended 區域的高度 */
+}
+
+.ContactUs {
+  background-image: url(../../assets/imges/hero/herobackgroud.svg);
+  height: 1000px; /* Contract 區域的高度 */
+}
+
+.Inquiry {
+  height: 1650px; /* Inquiry 區域的高度 */
+}
+
+.Contract {
+  background-image: url(../../assets/imges/features/featuresbackground.svg);
+  height: 1000px; /* Contract 區域的高度 */
 }

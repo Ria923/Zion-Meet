@@ -18,10 +18,15 @@ body {
   grid-template-areas:
     "header header line"
     "menu content line"
-    "menu content line";
+    "footer footer line";
+
   grid-template-columns: 300px 1fr 8px;
   height: 100vh;
   width: 100%;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .header {
@@ -34,7 +39,7 @@ body {
 
 .menu {
   grid-area: menu;
-  width: 800px;
+  width: 300px;
   margin-left: 35px;
 }
 
@@ -44,7 +49,6 @@ body {
 
 .gradientColumn {
   grid-area: line;
-  margin-left: auto;
   background: linear-gradient(
     180deg,
     #6d4799 0%,
@@ -67,5 +71,5 @@ body {
   right: 0;
   top: 0;
   width: 8px;
-  z-index: -1;
+  z-index: 1;
 }

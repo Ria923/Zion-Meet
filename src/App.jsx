@@ -10,33 +10,35 @@ import Contract from "./sections/contract/Contract";
 import ContactUs from "./sections/contactus/ContactUs";
 import Inquiry from "./sections/inquiry/Inquiry";
 import Footer from "./sections/footer/Footer";
+import GlobalBackground from "./components/background/Background";
 
 function App() {
   return (
     <div className="app">
-      <div className="backgrond">
-        <div className="gridContainer">
-          <div className="gradientColumn"></div>
-          <div className="header">
-            <Header />
-          </div>
+      <GlobalBackground />
+      <div className="gridContainer">
+        <div className="gradientColumn"></div>
+        <div className="header">
+          <Header />
+        </div>
 
-          <div className="menu">
-            <Menu />
-          </div>
+        <div className="menu">
+          <Menu />
+        </div>
 
-          <div className="column">
-            <main>
-              <HeroSection />
-              <About />
-              <Features />
-              <Recomedened />
-              <Contract />
-              <ContactUs />
-              <Inquiry />
-              <Footer />
-            </main>
-          </div>
+        <div className="column">
+          <main>
+            <HeroSection />
+            <About />
+            <Features />
+            <Recomedened />
+            <ContactUs />
+            <Inquiry />
+            <Contract />
+          </main>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </div>

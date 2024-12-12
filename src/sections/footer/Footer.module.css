@@ -1,0 +1,101 @@
+.footerContainer {
+  height: 100%;
+}
+
+.footerSection {
+  display: flex;
+}
+
+.footerLogo {
+  display: flex; /* 必须设置为 flex */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  flex-direction: column;
+}
+
+.Logo {
+  margin-top: 40px;
+}
+
+.zionname {
+  position: relative;
+  bottom: 30px;
+  margin: 0;
+  text-align: center; /* 确保文字在父容器中水平居中 */
+  color: #404040;
+  font-weight: 600;
+}
+
+.link {
+  width: 70%; /* 確保容器寬度 */
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  margin-top: 80px;
+}
+
+.footerList {
+  display: flex; /* 使用 Flexbox */
+  flex-wrap: wrap; /* 允許換行 */
+  list-style: none; /* 去掉列表點 */
+  padding: 0;
+  margin: 0;
+  justify-content: left; /* 置中對齊 */
+}
+
+.footerList li {
+  flex: 1 1 30%; /* 項目占據寬度的 30%（適合三列布局） */
+  max-width: 250px; /* 控制每個項目的最大寬度 */
+  color: #404040;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer; /* 滑鼠指針樣式 */
+  text-align: left;
+  transition: color 0.3s ease; /* 滑鼠懸停效果 */
+}
+
+.footerList li:nth-child(3) {
+  position: relative;
+  left: 40px;
+}
+
+.footerList li:nth-child(4),
+.footerList li:nth-child(5) {
+  position: relative;
+  bottom: 50px;
+}
+
+.footerList li:nth-child(5) {
+  position: relative;
+  right: 32px;
+}
+
+.footerList li:hover {
+  color: #6c63ff;
+}
+
+.Buttonare {
+  width: 500px;
+}
+
+.footerButton {
+  width: 363px;
+  height: 97px;
+  flex-shrink: 0;
+  position: relative;
+  top: 100px;
+}
+
+.footer {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #404040;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

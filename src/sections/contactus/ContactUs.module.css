@@ -1,0 +1,370 @@
+.Container {
+  margin-top: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.ContactusTitle {
+  margin-top: 100px;
+  color: #35003b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  display: inline-block;
+  white-space: nowrap; /* 禁止內容換行 */
+}
+
+.ContactusTitle::after {
+  content: "";
+  display: block;
+  width: 174px;
+  height: 5px;
+  margin-top: 2px;
+  background: linear-gradient(
+    to right,
+    #6d4799 0%,
+    #805785 7%,
+    #ac7c59 24%,
+    #cb973a 39%,
+    #dfa826 52%,
+    #e6ae20 61%,
+    #e6af24 64%,
+    #e7b532 67%,
+    #e9bd49 71%,
+    #ecca69 75%,
+    #efda93 79%,
+    #f3edc5 82%,
+    #f5f2d2 83%,
+    #ededec 99%
+  );
+}
+
+.Contactuscontant {
+  color: #404040;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  width: 400px;
+  text-align: left;
+}
+
+.Comparison {
+  margin-top: 80px;
+  display: flex;
+  gap: 0 25px;
+}
+
+.LeftList {
+  width: 182px;
+  height: 359px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background-color: #ededec;
+  position: relative;
+  top: 100px;
+}
+
+.Item {
+  padding-top: 30px;
+  flex-shrink: 0;
+  color: #404040;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 180% */
+}
+
+.Cards {
+  display: flex;
+  flex-grow: 1; /* 撐滿剩餘空間 */
+}
+
+.ZionCard {
+  text-align: center;
+  gap: 8px;
+  height: 480px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ZionCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 470px;
+  border-radius: 20px; /* 與主元素一致 */
+  background: linear-gradient(45deg, #6d4799, #e6ae20); /* 漸層效果 */
+  z-index: 1; /* 置於元素後面 */
+  padding: 5px; /* 邊框寬度 */
+  -webkit-mask: linear-gradient(0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /* 去掉內部填充部分 */
+  mask-composite: exclude;
+}
+
+.ZionCardtitl {
+  display: flex;
+  padding: 10px;
+}
+
+.Staricon1 img {
+  position: relative;
+  left: 20px;
+  top: 30px;
+  width: 12px;
+  height: auto;
+}
+.Staricon2 img {
+  width: 17px;
+  height: auto;
+  position: relative;
+  left: 18px;
+  top: 40px;
+}
+
+.Niceicon {
+  position: relative;
+  left: 25px;
+  top: 15px;
+}
+
+.ZionCardtit {
+  position: relative;
+  left: 25px;
+  color: #6d489a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.ZionCardcont {
+  color: #404040;
+  padding-top: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  position: relative;
+  left: 10px;
+}
+
+.lit_note {
+  position: relative;
+  top: 15px;
+  right: 18px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 360% */
+}
+
+.ZionFeature1,
+.ZionFeature2,
+.ZionFeature3,
+.ZionFeature4 {
+  color: #404040;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.ZionFeature1 {
+  padding-top: 10px;
+}
+
+.ZionFeature2 {
+  padding-top: 30px;
+}
+
+.ZionFeature3 {
+  padding-top: 35px;
+}
+
+.ZionFeature4 {
+  padding-top: 35px;
+}
+
+.ZionFeature1::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: #e7b532;
+  position: relative;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ZionFeature2::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 1px;
+  margin-top: 2px;
+  background-color: #e7b532;
+  position: relative;
+  bottom: 20px;
+  margin: 10px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.ZionFeature3::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 1px;
+  margin-top: 2px;
+  background-color: #e7b532;
+  position: relative;
+  bottom: 25px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.ZionFeature4::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 1px;
+  margin-top: 2px;
+  background-color: #e7b532;
+  position: relative;
+  bottom: 15px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.Card2 {
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  height: 455px;
+  width: 235px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+}
+
+.Card2 h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.Card2Feature1,
+.Card2Feature2,
+.Card2Feature3,
+.Card2Feature4 {
+  color: #404040;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+  margin-bottom: 15px;
+}
+
+.Card2Feature1 {
+  padding-top: 25px;
+}
+
+.Card2Feature2 {
+  padding-top: 10px;
+}
+
+.Card2Feature3 {
+  padding-top: 15px;
+}
+
+.Card2Feature4 {
+  padding-top: 10px;
+}
+
+.Card2Feature1::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 3px;
+  margin-top: 2px;
+  background-color: #ededec;
+  position: relative;
+  bottom: 15px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.Card2Feature2::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 3px;
+  margin-top: 2px;
+  background-color: #ededec;
+  position: relative;
+  bottom: 15px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.Card2Feature3::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 3px;
+  margin-top: 2px;
+  background-color: #ededec;
+  position: relative;
+  bottom: 15px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.Card2Feature4::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 3px;
+  margin-top: 2px;
+  background-color: #ededec;
+  position: relative;
+  bottom: 10px;
+  margin: 5px auto 0; /* 上間距 2px，自動置中，無下間距 */
+}
+
+.note {
+  max-width: 500px;
+  color: #404040;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 12px; /* 100% */
+
+  padding-top: 15px;
+  position: relative;
+  left: 205px;
+}

@@ -6,6 +6,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative; /* 為內部元素提供相對定位基準 */
+  background-image: url();
 }
 
 .heroSection {
@@ -64,92 +65,20 @@
   );
 }
 
-@media screen and (min-width: 768px) {
-  .main {
-    display: flex;
-    width: 900px;
-    margin: 0 0 0 -10px;
-    justify-content: flex-end; /* 將圖片置中 */
-    z-index: 1; /* 設定圖片位於文字下方 */
-  }
-
-  .mainImage {
-    width: 750px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* 確保圖片層級低於文字 */
-  }
+.main {
+  display: flex; /* 彈性盒子布局 */
+  width: 100%; /* 寬度調整為填滿父容器 */
+  margin: 0 auto; /* 自動居中 */
+  padding: 10px; /* 添加內距，讓圖片與邊界不會緊貼 */
+  box-sizing: border-box; /* 確保寬度計算包含內距與邊框 */
 }
 
-@media screen and (min-width: 1024px) {
-  .main {
-    display: flex;
-    width: 1150px;
-    margin: 0 0 0 10px;
-    justify-content: flex-end; /* 將圖片置中 */
-    z-index: 1; /* 設定圖片位於文字下方 */
-  }
-
-  .mainImage {
-    width: 1000px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* 確保圖片層級低於文字 */
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .main {
-    display: flex;
-    width: 1050px;
-    margin: 0 0 0 80px;
-    justify-content: flex-end; /* 將圖片置中 */
-    z-index: 1; /* 設定圖片位於文字下方 */
-  }
-
-  .mainImage {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* 確保圖片層級低於文字 */
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .main {
-    display: flex;
-    width: 1600px;
-    margin: 0 0 0 10px;
-    justify-content: flex-end; /* 將圖片置中 */
-    z-index: 1; /* 設定圖片位於文字下方 */
-  }
-
-  .mainImage {
-    width: 1400px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* 確保圖片層級低於文字 */
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .main {
-    display: flex;
-    width: 1150px;
-    margin: 0 0 0 10px;
-    justify-content: flex-end; /* 將圖片置中 */
-    z-index: 1; /* 設定圖片位於文字下方 */
-  }
-
-  .mainImage {
-    width: 1550px;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* 確保圖片層級低於文字 */
-  }
+.mainImage {
+  width: 100%; /* 圖片寬度自動填滿容器 */
+  height: auto; /* 自動調整高度以保持比例 */
+  object-fit: contain; /* 確保圖片不會被裁切，完全顯示 */
+  position: relative; /* 確保定位正常 */
+  left: 80px;
+  top: 20px;
+  z-index: 1; /* 確保圖片層級低於文字 */
 }
