@@ -9,7 +9,6 @@ const GlobalBackground = () => {
       <div className={Backgroundstyles.Features}></div>
       <div className={Backgroundstyles.Recommended}></div>
       <div className={Backgroundstyles.ContactUs}></div>
-
       <div className={Backgroundstyles.Inquiry}></div>
       <div className={Backgroundstyles.Contract}></div>
     </div>
