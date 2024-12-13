@@ -74,3 +74,12 @@
   content: ""; /* 清除内容 */
   display: none; /* 隐藏伪元素 */
 }
+
+.menuList li {
+  cursor: pointer; /* 當滑鼠懸停時顯示手指符號 */
+  transition: color 0.3s ease; /* 添加過渡效果，使顏色變換更平滑 */
+}
+
+.menuList li:hover {
+  color: #e6ae20; /* 當滑鼠懸停時改變文字顏色，這裡可以選擇任何顏色 */
+}

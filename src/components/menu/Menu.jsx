@@ -15,13 +15,13 @@ const Menu = () => {
       <h1 className={Menustyles.title}>MENU</h1>
       <hr className={Menustyles.divider} />
       <ul className={Menustyles.menuList}>
-        <li onClick={() => scrollToSection("section1")}>ZION-MEETとは？</li>
-        <li onClick={() => scrollToSection("section2")}>選ばれるポイント</li>
-        <li onClick={() => scrollToSection("section3")}>おすすめの機能追加</li>
-        <li onClick={() => scrollToSection("section4")}>
-          他社を圧倒する理由は？
+        <li onClick={() => scrollToSection("About")}>ZION-MEETとは？</li>
+        <li onClick={() => scrollToSection("Features")}>選ばれるポイント</li>
+        <li onClick={() => scrollToSection("Recomedened")}>
+          おすすめの機能追加
         </li>
-        <li onClick={() => scrollToSection("section5")}>
+        <li onClick={() => scrollToSection("ContactUs")}>他社との違い？</li>
+        <li onClick={() => scrollToSection("Inquiry")}>
           問い合わせから契約までの流れ
         </li>
       </ul>

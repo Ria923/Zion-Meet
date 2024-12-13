@@ -12,7 +12,7 @@ const GlobalBackground = () => {
     <div className={Backgroundstyles.section}>
       <div className={Backgroundstyles.HeaderHero}></div>
       <div className={Backgroundstyles.About}>
-        <div className={Backgroundstyles.Abouttitl}>
+        <div className={Backgroundstyles.Abouttitl} id="About">
           <img
             className={Backgroundstyles.Abouttitl}
             src={Abouttitl}
@@ -21,7 +21,7 @@ const GlobalBackground = () => {
         </div>
       </div>
       <div className={Backgroundstyles.Features}>
-        <div className={Backgroundstyles.Featurestitl}>
+        <div className={Backgroundstyles.Featurestitl} id="Features">
           <img
             className={Backgroundstyles.Featurestitl}
             src={Featurestitl}
@@ -30,7 +30,7 @@ const GlobalBackground = () => {
         </div>
       </div>
       <div className={Backgroundstyles.Recommended}>
-        <div className={Backgroundstyles.Recommendedtitl}>
+        <div className={Backgroundstyles.Recommendedtitl} id="Recomedened">
           <img
             className={Backgroundstyles.Recommendedtitl}
             src={Recommendedtitl}
@@ -39,7 +39,7 @@ const GlobalBackground = () => {
         </div>
       </div>
       <div className={Backgroundstyles.ContactUs}>
-        <div className={Backgroundstyles.ContactUstitl}>
+        <div className={Backgroundstyles.ContactUstitl} id="ContactUs">
           <img
             className={Backgroundstyles.ContactUstitl}
             src={ContactUstitl}
@@ -48,7 +48,7 @@ const GlobalBackground = () => {
         </div>
       </div>
       <div className={Backgroundstyles.Inquiry}>
-        <div className={Backgroundstyles.Inquirytitl}>
+        <div className={Backgroundstyles.Inquirytitl} id="Inquiry">
           <img
             className={Backgroundstyles.Inquirytitl}
             src={Inquirytitl}

@@ -7,7 +7,7 @@
   z-index: -1; /* 讓背景區塊位於其他元素下方 */
 }
 
-.HeaderHeroSection,
+.HeaderHero,
 .About,
 .Features,
 .Recommended,
@@ -64,5 +64,12 @@
 
 .Contract {
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
-  height: 1020px; /* Contract 區域的高度 */
+  height: 1000px; /* Contract 區域的高度 */
+}
+
+@media screen and (min-width: 1500px) {
+  .Contract {
+    background-image: url(../../assets/imges/hero/herobackgroud.svg);
+    height: 1045px; /* Contract 區域的高度 */
+  }
 }
