@@ -55,21 +55,14 @@
 
 .ContactUs {
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
-  height: 1000px; /* Contract 區域的高度 */
+  height: 1200px; /* Contract 區域的高度 */
 }
 
 .Inquiry {
-  height: 1650px; /* Inquiry 區域的高度 */
+  height: 1750px; /* Inquiry 區域的高度 */
 }
 
 .Contract {
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
-  height: 1000px; /* Contract 區域的高度 */
-}
-
-@media screen and (min-width: 1500px) {
-  .Contract {
-    background-image: url(../../assets/imges/hero/herobackgroud.svg);
-    height: 1045px; /* Contract 區域的高度 */
-  }
+  height: 100vh; /* Contract 區域的高度 */
 }

@@ -24,7 +24,6 @@
 .featuresTitle::after {
   content: "";
   display: block;
-
   width: 174px;
   height: 5px;
   margin-top: 2px;
@@ -117,54 +116,58 @@
   border-top: 2px dashed #e6ae20;
   display: flex;
   position: relative;
-  left: 300px;
+  left: 230px;
 }
 
 /* 针对每个功能区块的独特样式 */
 .feature1 .featureContent {
   position: relative;
-  left: 100px;
+  left: 45px;
 }
 
 .feature2 .featureContent {
   position: relative;
-  right: 20px;
+  top: 30px;
+  right: 135px;
 }
 
 .feature3 .featureContent {
   position: relative;
-  left: 100px;
+  left: 47px;
+  top: 45px;
 }
 
 .feature4 .featureContent {
   position: relative;
-  right: 20px;
+  top: 50px;
+  right: 130px;
 }
 
 .feature5 .featureContent {
   position: relative;
-  left: 100px;
+  left: 50px;
 }
 
 .feature1 .featureImage {
   position: relative;
-  right: 100px;
+  right: 130px;
 }
 .feature2 .featureImage {
   position: relative;
-  left: 80px;
+  left: 20px;
 }
 .feature3 .featureImage {
   position: relative;
-  right: 100px;
+
+  right: 140px;
 }
 .feature4 .featureImage {
   position: relative;
-  left: 80px;
+  left: 25px;
 }
 .feature5 .featureImage {
   position: relative;
-  right: 100px;
+  right: 130px;
 }
 
 /* 响应式设计：手机端 */

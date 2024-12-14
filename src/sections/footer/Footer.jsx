@@ -4,6 +4,14 @@ import Button from "../../components/button/Button";
 import Logo from "../../assets/imges/footer/LOGO.svg";
 
 const Footer = () => {
+  // 点击滚动到页面指定位置
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // 平滑滚动
+    }
+  };
+
   return (
     <div className={Footerstyles.footerContainer}>
       <section className={Footerstyles.footerSection}>
