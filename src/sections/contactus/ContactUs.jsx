@@ -101,17 +101,41 @@ const ContactUs = () => {
                   比べる？
                 </p>
               </div>
-              {/* 手機版介紹菜單 */}
-              <div className={Contactusstyle.MobileLeftList}>
-                <div className={Contactusstyle.Item}>料金</div>
-                <div className={Contactusstyle.Item}>機能追加</div>
-                <div className={Contactusstyle.Item}>登録</div>
-                <div className={Contactusstyle.Item}>人数無制限</div>
-                <div className={Contactusstyle.Item}>時間無制限</div>
+              <div className={Contactusstyle.MobileZIONA}>
+                {/* 手機版介紹菜單 */}
+                <div className={Contactusstyle.MobileLeftList}>
+                  <div className={Contactusstyle.Item}>料金</div>
+                  <div className={Contactusstyle.Item}>機能追加</div>
+                  <div className={Contactusstyle.Item}>登録</div>
+                  <div className={Contactusstyle.Item}>人数無制限</div>
+                  <div className={Contactusstyle.Item}>時間無制限</div>
+                </div>
+                {/* 手機版介紹ZIONMEET */}
+                <div className={Contactusstyle.MobileZion}>
+                  <p className={Contactusstyle.MobileZioncont}>
+                    ¥5,000円~/月{" "}
+                    <span className={Contactusstyle.Mobilelit_note}>(*1)</span>
+                  </p>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                  <div className={Contactusstyle.MobileZionFeature}>不要</div>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                </div>
+
+                {/* 手機版介紹A */}
+                <div className={Contactusstyle.MobileA}>
+                  <p className={Contactusstyle.MobileAcont}>1人 ¥3,438/月</p>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                  <div className={Contactusstyle.MobileAFeature}>
+                    主催者は必要
+                  </div>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
-              {" "}
               {/* 手機版標題 */}
               <div className={Contactusstyle.Mobiletitl}>
                 <p className={Contactusstyle.Mobiletitlcon}>
@@ -120,13 +144,38 @@ const ContactUs = () => {
                   比べる？
                 </p>
               </div>
-              {/* 手機版介紹菜單 */}
-              <div className={Contactusstyle.MobileLeftList}>
-                <div className={Contactusstyle.Item}>料金</div>
-                <div className={Contactusstyle.Item}>機能追加</div>
-                <div className={Contactusstyle.Item}>登録</div>
-                <div className={Contactusstyle.Item}>人数無制限</div>
-                <div className={Contactusstyle.Item}>時間無制限</div>
+
+              <div className={Contactusstyle.MobileZIONA}>
+                {/* 手機版介紹菜單 */}
+                <div className={Contactusstyle.MobileLeftList}>
+                  <div className={Contactusstyle.Item}>料金</div>
+                  <div className={Contactusstyle.Item}>機能追加</div>
+                  <div className={Contactusstyle.Item}>登録</div>
+                  <div className={Contactusstyle.Item}>人数無制限</div>
+                  <div className={Contactusstyle.Item}>時間無制限</div>
+                </div>
+                {/* 手機版介紹ZIONMEET */}
+                <div className={Contactusstyle.MobileZion}>
+                  <p className={Contactusstyle.MobileZioncont}>
+                    ¥5,000円~/月{" "}
+                    <span className={Contactusstyle.Mobilelit_note}>(*1)</span>
+                  </p>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                  <div className={Contactusstyle.MobileZionFeature}>不要</div>
+                  <div className={Contactusstyle.MobileZionFeature}>○</div>
+                </div>
+
+                {/* 手機版介紹B */}
+                <div className={Contactusstyle.MobileA}>
+                  <p className={Contactusstyle.MobileAcont}>1人 ¥2200/月</p>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                  <div className={Contactusstyle.MobileAFeature}>
+                    主催者は必要
+                  </div>
+                  <div className={Contactusstyle.MobileAFeature}>✕</div>
+                </div>
               </div>
             </SwiperSlide>
             {/* 可以根據需要添加更多的 SwiperSlide */}

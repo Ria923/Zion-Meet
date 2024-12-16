@@ -61,3 +61,12 @@
   position: relative;
   top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .Contracttit {
+    margin-top: 20px;
+    text-align: left; /* 保持標題左對齊 */
+    width: 100%; /* 確保標題佔滿寬度 */
+    font-size: 15px;
+    font-style: inter;
+  }
+}

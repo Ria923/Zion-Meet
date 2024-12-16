@@ -210,7 +210,6 @@
     flex-direction: column;
     justify-content: center; /* 居中图片 */
     align-items: left;
-    padding: 15px; /* 增加内边距 */
     width: 100%; /* 确保内容区域宽度为100% */
     position: static; /* 移除相对定位 */
   }
@@ -218,10 +217,14 @@
   .featureContent::after {
     content: "";
     background-color: #e9bd49;
-    height: 2px;
+    height: 1.5px;
     width: 70%;
     margin-top: 20px;
     align-self: center;
+  }
+
+  .featureContent:last-child::after {
+    display: none; /* 隱藏最後一個 .featureContent 的 ::after 伪元素 */
   }
 
   .featureThumb {
@@ -239,7 +242,10 @@
     position: static; /* 移除相对定位 */
     align-self: left;
   }
-
+  .featureThumb {
+    margin: 0px;
+    padding: 0px;
+  }
   .featureThumb img {
     max-width: 90%; /* 限制图片最大宽度 */
     height: auto; /* 保持图片比例 */

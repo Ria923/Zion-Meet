@@ -381,6 +381,8 @@
     margin-top: 20px;
     text-align: left; /* 保持標題左對齊 */
     width: 100%; /* 確保標題佔滿寬度 */
+    font-size: 25px;
+    font-style: inter;
   }
 
   .Contactuscontant {
@@ -388,9 +390,8 @@
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
     text-align: center; /* 文字水平居中 */
-    width: 100%; /* 確保內容佔滿寬度 */
-    flex-grow: 1; /* 使這個元素佔滿剩餘空間 */
-    font-size: 15px;
+    width: 80%; /* 確保內容佔滿寬度 */
+    font-size: 10px;
   }
 
   .Comparison {
@@ -413,11 +414,15 @@
     line-height: normal;
   }
 
+  .MobileZIONA {
+    display: flex;
+  }
+
   .MobtitlZion {
     color: #6d489a;
     font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 28px;
+    font-style: Inter;
     font-weight: 900;
     padding: 10px;
   }
@@ -425,7 +430,7 @@
   .Mobtitlcomp {
     color: #000;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -446,25 +451,166 @@
 
   .MobileLeftList {
     border-radius: 10px;
-    background: #ffffff;
-    width: 100px;
-    height: 297px;
+    background: #ededec;
+    width: 20%;
+    height: 450px;
   }
 
   .Item {
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 10px;
     color: #000;
     text-align: center;
-    font-family: "Josefin Sans";
-    font-size: 15px;
+    font-family: Inter;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px; /* 400% */
+    line-height: 20px; /* 400% */
+  }
+  .MobileZion {
+    width: 43%;
+    margin-left: 10px;
+    text-align: center;
   }
 
-  .swiper {
-    width: 100%;
-    height: 900px;
+  .MobileZioncont {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: Inter;
+    font-weight: 800;
+    line-height: 20px; /* 400% */
+    padding-top: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .MobileZionFeature {
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 20px; /* 400% */
+    position: relative;
+  }
+
+  .MobileZionFeature:nth-child(1) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileZionFeature:nth-child(2) {
+    margin-top: 0px;
+    padding-top: 45px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileZionFeature:nth-child(3) {
+    margin-top: 0px;
+    padding-top: 58px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileZionFeature:nth-child(4) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileZionFeature:nth-child(5) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileZionFeature::after {
+    content: "";
+    height: 2px;
+    width: 70%;
+    background-color: #e7b532;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 50px;
+    top: 30%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    border-radius: 5px;
+  }
+
+  .Mobilelit_note {
+    position: relative;
+    top: 15px;
+    right: 25px;
+    font-size: 10px;
+  }
+  .MobileZion::before {
+    /* 第二條線：垂直線條 */
+    content: "";
+    position: absolute;
+    height: 80%; /* 線條的高度等於父元素的高度 */
+    width: 2px; /* 線條的寬度 */
+    background: linear-gradient(
+      90deg,
+      #e6ae20 0%,
+      #6d4799 100%
+    ); /* 線條的顏色 */
+    right: 130px;
+  }
+
+  .MobileA {
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .MobileAcont {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: Inter;
+    line-height: 20px; /* 400% */
+    padding-top: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .MobileZionFeature {
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 20px; /* 400% */
+    position: relative;
+  }
+
+  .MobileZion .MobileAFeature:nth-child(1) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileAFeature:nth-child(2) {
+    margin-top: 0px;
+    padding-top: 45px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileAFeature:nth-child(3) {
+    margin-top: 0px;
+    padding-top: 58px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileAFeature:nth-child(4) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .MobileAFeature:nth-child(5) {
+    margin-top: 0px;
+    padding-top: 60px;
+    line-height: 20px; /* 400% */
+  }
+
+  .note {
+    position: static;
+    padding: 30px;
   }
 }
