@@ -15,5 +15,7 @@
   .logoImage {
     display: flex;
     justify-content: center;
+    width: 100px;
+    height: auto;
   }
 }
