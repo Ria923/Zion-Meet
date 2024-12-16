@@ -180,6 +180,18 @@
     position: static; /* 移除相对定位 */
   }
 
+  .featuresTitle {
+    color: #35003b;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: inter;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    display: inline-block;
+    white-space: nowrap; /* 禁止內容換行 */
+  }
+
   /* 移除可能影响排版的相对定位 */
   .feature1 .featureContent,
   .feature2 .featureContent,
@@ -219,16 +231,21 @@
   }
 
   .featurePointTitle {
-    font-size: 35px; /* 调整标题字体大小 */
+    font-size: 20px; /* 调整标题字体大小 */
     margin-bottom: 10px; /* 调整标题与文本的间距 */
     text-align: left;
   }
 
+  .featurePointTitle img {
+    width: 15%;
+    height: auto;
+  }
+
   .featureText {
     color: #404040;
-    font-family: "Josefin Sans";
-    font-size: 25px;
-    min-width: 625px;
+    font-style: inter;
+    font-size: 15px;
+    max-width: 90%;
     line-height: 28px; /* 216.667% */
     text-align: left;
   }

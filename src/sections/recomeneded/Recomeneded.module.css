@@ -138,17 +138,26 @@
 @media screen and (max-width: 768px) {
   /* 调整容器的宽度 */
   .RecomenededTitle {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    color: #35003b;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: inter;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    display: inline-block;
+    white-space: nowrap; /* 禁止內容換行 */
   }
 
   /* 网格布局调整 */
   .grid {
-    display: flex; /* 使用网格布局 */
+    display: flex; /* 使用 Flexbox 布局 */
     flex-direction: column;
     gap: 20px; /* 项目之间的间距 */
     padding: 0;
-    justify-content: left;
-    align-items: center;
+    justify-content: flex-start; /* 垂直方向對齊開始 */
+    align-items: flex-start; /* 水平方向對齊開始 */
   }
 
   .grid > div:nth-child(1),
@@ -162,13 +171,43 @@
     background-color: #6d4799 !important; /* 手機版的背景顏色 */
   }
   .grid > div:nth-child(4) {
-    background-color: #dfa826 !important; /* 手機版的背景顏色 */
+    background-color: #dfa826 !important;
+    align-self: flex-start;
   }
 
   .card {
-    margin-left: 20px;
-    border-radius: 0px 30px 10px 30px;
+    width: 80%;
+    height: 450px;
     overflow: hidden;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px;
+    border-radius: 0px 30px 10px 30px;
+  }
+  .cardImage {
+    width: 65%;
+    height: auto;
+  }
+
+  /* 卡片标题样式 */
+  .cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  /* 卡片文本样式 */
+  .cardText {
+    color: #fff;
+    max-width: 100%;
+    font-family: "Josefin Sans";
+    font-size: 13px;
+    font-style: inter;
+    font-weight: 500;
+    line-height: 20px;
   }
 }
