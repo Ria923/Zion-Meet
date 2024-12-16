@@ -169,27 +169,73 @@
   position: relative;
   right: 150px;
 }
-
-/* 响应式设计：手机端 */
-@media screen and (max-width: 767px) {
+/* 响应式设计：最大宽度 768px */
+@media screen and (max-width: 768px) {
+  /* 确保功能区块的排版正确 */
   .featureAlternate {
-    grid-template-columns: 1fr; /* 切换为单列布局 */
-    gap: 30px; /* 增加间距 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column-reverse; /* 确保图片在上，文字在下 */
+    align-items: center; /* 确保所有元素居中 */
+    padding: 20px; /* 添加内边距 */
+    position: static; /* 移除相对定位 */
   }
 
-  .featureContent {
-    text-align: center; /* 文本居中 */
-    padding: 15px;
+  /* 移除可能影响排版的相对定位 */
+  .feature1 .featureContent,
+  .feature2 .featureContent,
+  .feature3 .featureContent,
+  .feature4 .featureContent,
+  .feature5 .featureContent {
+    text-align: center; /* 文字居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 居中图片 */
+    align-items: left;
+    padding: 15px; /* 增加内边距 */
+    width: 100%; /* 确保内容区域宽度为100% */
+    position: static; /* 移除相对定位 */
   }
 
   .featureThumb {
-    justify-content: center;
+    display: flex;
+    justify-content: center; /* 居中图片 */
+    align-items: center;
+    width: 100%; /* 确保图片容器宽度为100% */
   }
-}
 
-/* 响应式设计：桌面端 */
-@media screen and (min-width: 768px) {
-  .featureContent {
-    text-align: left; /* 文本左对齐 */
+  .feature1 .featureImage,
+  .feature2 .featureImage,
+  .feature3 .featureImage,
+  .feature4 .featureImage,
+  .feature5 .featureImage {
+    position: static; /* 移除相对定位 */
+    padding: 20px;
+  }
+
+  .featureThumb img {
+    max-width: 80%; /* 限制图片最大宽度 */
+    height: auto; /* 保持图片比例 */
+    object-fit: contain; /* 确保图片不会变形 */
+  }
+
+  .featurePointTitle {
+    font-size: 35px; /* 调整标题字体大小 */
+    margin-bottom: 10px; /* 调整标题与文本的间距 */
+    text-align: left;
+  }
+
+  .featureText {
+    color: #404040;
+    font-family: "Josefin Sans";
+    font-size: 25px;
+    min-width: 625px;
+    line-height: 28px; /* 216.667% */
+    text-align: left;
+  }
+
+  /* 分隔线样式 */
+  .divider {
+    position: static;
+    display: none;
   }
 }

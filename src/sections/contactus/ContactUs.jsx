@@ -3,6 +3,10 @@ import Contactusicon from "../../assets/imges/contractus/icon.svg";
 import Niceicon from "../../assets/imges/contractus/niceicon.svg";
 import Staricon from "../../assets/imges/contractus/staricon.svg";
 import Contactusstyle from "./ContactUs.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // 引入 swiper 的基本樣式
+import "swiper/css/pagination"; // 引入 pagination 的樣式
+import { Pagination } from "swiper/modules";
 
 const ContactUs = () => {
   return (
@@ -18,10 +22,11 @@ const ContactUs = () => {
             />
           </h1>
 
-          <caption className={Contactusstyle.Contactuscontant}>
-            「多機能・高セキュリティ・低コスト」<br></br>
+          <p className={Contactusstyle.Contactuscontant}>
+            「多機能・高セキュリティ・低コスト」
+            <br />
             全てを兼ね備えたZION-MEETで、これまでの会議体験を一新。
-          </caption>
+          </p>
         </div>
 
         <div className={Contactusstyle.Comparison}>
@@ -77,6 +82,55 @@ const ContactUs = () => {
               <div className={Contactusstyle.Card2Feature4}>✕</div>
             </div>
           </div>
+        </div>
+
+        <div className={Contactusstyle.MobileSwiper}>
+          <Swiper
+            pagination={{
+              dynamicBullets: true, // 動態顯示分頁標籤
+            }}
+            modules={[Pagination]} // 引入 Pagination 模塊
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              {/* 手機版標題 */}
+              <div className={Contactusstyle.Mobiletitl}>
+                <p className={Contactusstyle.Mobiletitlcon}>
+                  <span className={Contactusstyle.MobtitlZion}>ZION-MEET</span>
+                  と<span className={Contactusstyle.Mobtitlcomp}>A社</span>
+                  比べる？
+                </p>
+              </div>
+              {/* 手機版介紹菜單 */}
+              <div className={Contactusstyle.MobileLeftList}>
+                <div className={Contactusstyle.Item}>料金</div>
+                <div className={Contactusstyle.Item}>機能追加</div>
+                <div className={Contactusstyle.Item}>登録</div>
+                <div className={Contactusstyle.Item}>人数無制限</div>
+                <div className={Contactusstyle.Item}>時間無制限</div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              {/* 手機版標題 */}
+              <div className={Contactusstyle.Mobiletitl}>
+                <p className={Contactusstyle.Mobiletitlcon}>
+                  <span className={Contactusstyle.MobtitlZion}>ZION-MEET</span>
+                  と<span className={Contactusstyle.Mobtitlcomp}>B社</span>
+                  比べる？
+                </p>
+              </div>
+              {/* 手機版介紹菜單 */}
+              <div className={Contactusstyle.MobileLeftList}>
+                <div className={Contactusstyle.Item}>料金</div>
+                <div className={Contactusstyle.Item}>機能追加</div>
+                <div className={Contactusstyle.Item}>登録</div>
+                <div className={Contactusstyle.Item}>人数無制限</div>
+                <div className={Contactusstyle.Item}>時間無制限</div>
+              </div>
+            </SwiperSlide>
+            {/* 可以根據需要添加更多的 SwiperSlide */}
+          </Swiper>
         </div>
 
         <p className={Contactusstyle.note}>

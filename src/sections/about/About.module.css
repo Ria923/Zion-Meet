@@ -77,3 +77,11 @@
   line-height: 60px;
   letter-spacing: 1.68px;
 }
+
+@media screen and (max-width: 768px) {
+  .Aboutcontant {
+    font-size: 18px;
+    max-width: 600px;
+    letter-spacing: 0.5px;
+  }
+}

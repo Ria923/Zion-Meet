@@ -12,7 +12,7 @@ import Number4 from "../../assets/imges/recomeneded/O4.svg";
 const Recomeneded = [
   {
     id: "01",
-    title: "分けるリスト",
+    title: "チームを分けるリスト",
     text: "複数のチームが協力するプロジェクトの会議では、会議をより効率的に進めることができます。",
     image: {
       main: Recomeneded1Image,
@@ -64,7 +64,6 @@ const RecomenededFeatures = () => {
             style={{ backgroundColor: feature.bgColor }}
           >
             <span className={RecomenededStyles.cardId}>
-              {" "}
               <img
                 src={feature.image.secondary}
                 alt="Secondary Image"

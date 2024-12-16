@@ -5,8 +5,6 @@
 .gridContainer {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative; /* 為內部元素提供相對定位基準 */
-  background-image: url();
 }
 
 .heroSection {
@@ -81,4 +79,110 @@
   left: 80px;
   top: 20px;
   z-index: 1; /* 確保圖片層級低於文字 */
+}
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    margin: 0 auto;
+  }
+
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    height: 100%; /* 讓 gridContainer 高度填滿整個視窗 */
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column; /* 確保內容在上，圖片在下 */
+    position: relative;
+    top: 40px;
+    width: 100%; /* 設定為 100%，讓其寬度填滿父容器 */
+    align-items: center; /* 確保內容在水平方向居中 */
+  }
+
+  .heroContent {
+    z-index: 2; /* 提高層級，讓文字區塊位於圖片之上 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    text-align: center; /* 確保文字居中 */
+    margin-bottom: 0px;
+  }
+
+  .heroTitle {
+    font-size: 32px; /* 可以根據需要調整字型大小 */
+    color: #404040;
+    margin: 0;
+    font-style: inter;
+    font-weight: normal;
+  }
+
+  .heroSubtitle {
+    font-size: 14px;
+    color: #404040;
+    margin-top: 5px;
+    font-style: inter;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+
+  .heroSubtitle::after {
+    content: "";
+    display: block;
+    width: 250px; /* 可以調整為較小的寬度以適應手機 */
+    height: 1px;
+    margin-top: 2px;
+    background: linear-gradient(
+      to right,
+      #6d4799 0%,
+      #805785 7%,
+      #ac7c59 24%,
+      #cb973a 39%,
+      #dfa826 52%,
+      #e6ae20 61%,
+      #e6af24 64%,
+      #e7b532 67%,
+      #e9bd49 71%,
+      #ecca69 75%,
+      #efda93 79%,
+      #f3edc5 82%,
+      #f5f2d2 83%,
+      #ededec 99%
+    );
+  }
+
+  /* Main Section */
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .mainImage {
+    width: 100%; /* 圖片寬度自動填滿容器 */
+    height: auto; /* 自動調整高度以保持比例 */
+    object-fit: contain;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  /* 按鈕樣式 */
+  .heroButton {
+    width: auto; /* 讓按鈕根據內容自適應寬度 */
+    padding: 15px; /* 添加適當的內邊距 */
+    display: flex; /* 使用 flex 來對齊內容 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    box-sizing: border-box; /* 確保內邊距不影響寬度計算 */
+  }
 }

@@ -66,3 +66,15 @@
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
   height: 100vh; /* Contract 區域的高度 */
 }
+
+@media screen and (max-width: 768px) {
+  .HeaderHero,
+  .About,
+  .Features,
+  .Recommended,
+  .ContactUs,
+  .Inquiry,
+  .Contract {
+    background: none; /* 取消背景圖片 */
+  }
+}

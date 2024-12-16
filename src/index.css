@@ -73,3 +73,31 @@ body {
   width: 8px;
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    margin: 0 auto;
+  }
+  .gridContainer {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu {
+    display: none; /* 隱藏菜單 */
+  }
+
+  /* 可以根據需求進一步調整其他元素的佈局 */
+  .header,
+  .footer,
+  .column {
+    width: 100%; /* 使這些元素寬度填滿 */
+  }
+
+  .menu {
+    display: none;
+  }
+}

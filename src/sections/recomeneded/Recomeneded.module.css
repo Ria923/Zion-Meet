@@ -134,3 +134,41 @@
   font-weight: 500;
   line-height: 26px;
 }
+
+@media screen and (max-width: 768px) {
+  /* 调整容器的宽度 */
+  .RecomenededTitle {
+    padding-bottom: 80px;
+  }
+
+  /* 网格布局调整 */
+  .grid {
+    display: flex; /* 使用网格布局 */
+    flex-direction: column;
+    gap: 20px; /* 项目之间的间距 */
+    padding: 0;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .grid > div:nth-child(1),
+  .grid > div:nth-child(2),
+  .grid > div:nth-child(3),
+  .grid > div:nth-child(4) {
+    position: static;
+  }
+
+  .grid > div:nth-child(3) {
+    background-color: #6d4799 !important; /* 手機版的背景顏色 */
+  }
+  .grid > div:nth-child(4) {
+    background-color: #dfa826 !important; /* 手機版的背景顏色 */
+  }
+
+  .card {
+    margin-left: 20px;
+    border-radius: 0px 30px 10px 30px;
+    overflow: hidden;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+}

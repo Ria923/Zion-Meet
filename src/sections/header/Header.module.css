@@ -7,3 +7,13 @@
 .logoImage {
   width: 67px;
 }
+
+@media screen and (max-width: 768px) {
+  .headerLogo {
+    max-width: 100%;
+  }
+  .logoImage {
+    display: flex;
+    justify-content: center;
+  }
+}

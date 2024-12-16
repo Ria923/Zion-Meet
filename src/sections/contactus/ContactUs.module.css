@@ -367,3 +367,104 @@
   position: relative;
   left: 205px;
 }
+
+@media screen and (max-width: 768px) {
+  .ContactusContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* 保證父容器佔滿整個寬度 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+  }
+
+  .ContactusTitle {
+    margin-top: 20px;
+    text-align: left; /* 保持標題左對齊 */
+    width: 100%; /* 確保標題佔滿寬度 */
+  }
+
+  .Contactuscontant {
+    display: flex; /* 設為 flex 容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center; /* 文字水平居中 */
+    width: 100%; /* 確保內容佔滿寬度 */
+    flex-grow: 1; /* 使這個元素佔滿剩餘空間 */
+    font-size: 15px;
+  }
+
+  .Comparison {
+    display: none;
+  }
+
+  /* Swiper 父容器調整 */
+  .MobileSwiper {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 手機版文字樣式 */
+  .Mobiletitlcon {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .MobtitlZion {
+    color: #6d489a;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    padding: 10px;
+  }
+
+  .Mobtitlcomp {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    margin: 20px;
+  }
+
+  .Mobtitlcomp::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0; /* 讓線充滿整個文本寬度 */
+    bottom: 0;
+    height: 5px; /* 線的粗細 */
+    background-color: #e6ae21; /* 線的顏色 */
+    z-index: -1;
+  }
+
+  .MobileLeftList {
+    border-radius: 10px;
+    background: #ffffff;
+    width: 100px;
+    height: 297px;
+  }
+
+  .Item {
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #000;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 400% */
+  }
+
+  .swiper {
+    width: 100%;
+    height: 900px;
+  }
+}
