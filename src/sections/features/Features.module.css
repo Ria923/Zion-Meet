@@ -171,13 +171,19 @@
 }
 /* 响应式设计：最大宽度 768px */
 @media screen and (max-width: 768px) {
+  /* 整个功能区块的容器 */
+  .featuresContainer {
+    margin-top: 0px;
+    padding: 0px 0px 0px 20px;
+  }
+
   /* 确保功能区块的排版正确 */
   .featureAlternate {
     display: flex; /* 使用 flex 布局 */
     flex-direction: column-reverse; /* 确保图片在上，文字在下 */
     align-items: center; /* 确保所有元素居中 */
-    padding: 20px; /* 添加内边距 */
     position: static; /* 移除相对定位 */
+    margin-top: 0px;
   }
 
   .featuresTitle {
@@ -190,6 +196,7 @@
     letter-spacing: 4.8px;
     display: inline-block;
     white-space: nowrap; /* 禁止內容換行 */
+    margin-top: 0px;
   }
 
   /* 移除可能影响排版的相对定位 */
@@ -208,6 +215,15 @@
     position: static; /* 移除相对定位 */
   }
 
+  .featureContent::after {
+    content: "";
+    background-color: #e9bd49;
+    height: 2px;
+    width: 70%;
+    margin-top: 20px;
+    align-self: center;
+  }
+
   .featureThumb {
     display: flex;
     justify-content: center; /* 居中图片 */
@@ -221,19 +237,21 @@
   .feature4 .featureImage,
   .feature5 .featureImage {
     position: static; /* 移除相对定位 */
-    padding: 20px;
+    align-self: left;
   }
 
   .featureThumb img {
-    max-width: 80%; /* 限制图片最大宽度 */
+    max-width: 90%; /* 限制图片最大宽度 */
     height: auto; /* 保持图片比例 */
     object-fit: contain; /* 确保图片不会变形 */
+    margin-bottom: 0;
   }
 
   .featurePointTitle {
     font-size: 20px; /* 调整标题字体大小 */
     margin-bottom: 10px; /* 调整标题与文本的间距 */
     text-align: left;
+    margin-top: 0px;
   }
 
   .featurePointTitle img {
