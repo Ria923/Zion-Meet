@@ -13,11 +13,9 @@
   text-align: left;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 /* 标题下方的装饰线 */
@@ -76,7 +74,7 @@
 .featurePointTitle {
   display: flex;
   gap: 10px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 24px;
   font-weight: 700;
   color: #af8057;
@@ -86,7 +84,7 @@
 /* 功能描述文本样式 */
 .featureText {
   margin-top: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 16px;
   color: #404040;
   font-weight: 700;
@@ -189,9 +187,8 @@
   .featuresTitle {
     color: #35003b;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    font-size: 25px;
-    font-style: inter;
+    font-family: "Josefin Sans";
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 4.8px;
     display: inline-block;
@@ -268,8 +265,9 @@
 
   .featureText {
     color: #404040;
-    font-style: inter;
+    font-family: "Josefin Sans";
     font-size: 15px;
+    font-weight: 500;
     max-width: 90%;
     line-height: 28px; /* 216.667% */
     text-align: left;

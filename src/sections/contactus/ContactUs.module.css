@@ -8,11 +8,9 @@
   margin-top: 250px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 4.8px;
   display: inline-block;
   white-space: nowrap; /* 禁止內容換行 */
@@ -47,7 +45,6 @@
   color: #404040;
   font-family: "Josefin Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   width: 400px;
@@ -77,7 +74,6 @@
   text-align: center;
   font-family: "Josefin Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 180% */
 }
@@ -148,16 +144,13 @@
   left: 25px;
   color: #6d489a;
   font-size: 24px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
 }
 
 .ZionCardcont {
   color: #404040;
   padding-top: 10px;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 36px;
   position: relative;
@@ -170,9 +163,8 @@
   right: 18px;
   color: #000;
   text-align: center;
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 10px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 360% */
 }
@@ -183,9 +175,8 @@
 .ZionFeature4 {
   color: #404040;
   text-align: center;
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -268,11 +259,11 @@
 
 .Card2 h3 {
   color: #000;
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 24px;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: normal;
+
   margin-bottom: 50px;
 }
 
@@ -281,10 +272,10 @@
 .Card2Feature3,
 .Card2Feature4 {
   color: #404040;
-  text-align: center;
-  font-family: Inter;
+
+  font-family: "Josefin Sans";
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 36px; /* 180% */
   margin-bottom: 15px;
@@ -381,8 +372,8 @@
     margin-top: 20px;
     text-align: left; /* 保持標題左對齊 */
     width: 100%; /* 確保標題佔滿寬度 */
-    font-size: 25px;
-    font-style: inter;
+    font-size: 20px;
+    font-family: "Josefin Sans";
   }
 
   .Contactuscontant {
@@ -391,7 +382,10 @@
     align-items: center; /* 垂直居中 */
     text-align: center; /* 文字水平居中 */
     width: 80%; /* 確保內容佔滿寬度 */
-    font-size: 10px;
+    font-size: 15px;
+    margin: 20px;
+    padding: 20px 20px;
+    white-space: nowrap;
   }
 
   .Comparison {
@@ -407,11 +401,9 @@
   /* 手機版文字樣式 */
   .Mobiletitlcon {
     color: #000;
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 15px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
   }
 
   .MobileZIONA {
@@ -420,20 +412,19 @@
 
   .MobtitlZion {
     color: #6d489a;
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 28px;
-    font-style: Inter;
-    font-weight: 900;
+    font-weight: 800;
     padding: 10px;
   }
 
   .Mobtitlcomp {
     color: #000;
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 23px;
-    font-style: normal;
+
     font-weight: 800;
-    line-height: normal;
+
     position: relative;
     margin: 20px;
   }
@@ -462,9 +453,9 @@
     padding-bottom: 10px;
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 12px;
-    font-style: normal;
+
     font-weight: 500;
     line-height: 20px; /* 400% */
   }
@@ -475,19 +466,18 @@
   }
 
   .MobileZioncont {
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 15px;
-    font-style: Inter;
     font-weight: 800;
     line-height: 20px; /* 400% */
-    padding-top: 35px;
+    padding-top: 65px;
     position: relative;
     left: 10px;
   }
 
   .MobileZionFeature {
     font-size: 15px;
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-weight: 800;
     line-height: 20px; /* 400% */
     position: relative;
@@ -558,31 +548,28 @@
   }
 
   .MobileA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-left: 5px;
+    margin-left: 20px;
   }
 
   .MobileAcont {
-    font-family: Inter;
+    font-family: "Josefin Sans";
     font-size: 15px;
-    font-style: Inter;
-    line-height: 20px; /* 400% */
-    padding-top: 35px;
-    position: relative;
-    left: 10px;
+    line-height: 10px; /* 400% */
+    padding-top: 10px;
   }
 
   .MobileZionFeature {
     font-size: 15px;
-    font-family: Inter;
-    font-weight: 800;
-    line-height: 20px; /* 400% */
+    font-family: "Josefin Sans";
+    font-weight: 700;
     position: relative;
   }
 
   .MobileZion .MobileAFeature:nth-child(1) {
-    margin-top: 0px;
-    padding-top: 60px;
     line-height: 20px; /* 400% */
   }
 

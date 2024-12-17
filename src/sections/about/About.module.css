@@ -10,11 +10,9 @@
   margin-top: 280px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 4.8px;
   display: inline-block;
   white-space: nowrap; /* 禁止內容換行 */
@@ -49,11 +47,9 @@
 .Abouttit {
   color: #333;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
   font-size: 35px;
-  font-style: normal;
+  font-family: "Josefin Sans";
   font-weight: 700;
-  line-height: normal;
   display: inline; /* 確保與文字同行 */
   white-space: nowrap; /* 防止換行 */
 }
@@ -70,9 +66,8 @@
   height: 147px;
   flex-shrink: 0;
   color: #404040;
-  font-family: Inter;
+  font-family: "Josefin Sans";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: 60px;
   letter-spacing: 1.68px;
@@ -89,24 +84,22 @@
   }
 
   .Aboutcontant {
-    font-size: 16px;
-    max-width: 75%;
+    max-width: 90%;
     margin-left: 10px;
     color: #000;
-    font-family: "Josefin Sans";
-    font-size: 12px;
-    font-style: inter;
+    font-size: 15px;
     font-weight: 500;
+    letter-spacing: 4.8px;
     line-height: 20px; /* 216.667% */
-    padding-left: 20px;
     padding-top: 30px;
+    font-family: "Josefin Sans";
   }
 
   .AboutTitle {
     color: #35003b;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
-    font-style: inter;
+    font-size: 20px;
+    font-family: "Josefin Sans";
     font-weight: 700;
     letter-spacing: 4.8px;
     display: inline-block;
@@ -115,6 +108,7 @@
   }
 
   .Abouttit {
+    font-family: "Josefin Sans";
     font-size: 15px;
   }
 }
