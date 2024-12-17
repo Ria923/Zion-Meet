@@ -267,12 +267,14 @@
   }
 
   h4 {
+    font-family: inter;
     margin: 0;
   }
 
   p {
     margin: 0;
     max-width: 100%;
+    font-family: inter;
   }
   .DescriptionStyle1,
   .DescriptionStyle2,
