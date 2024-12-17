@@ -62,9 +62,11 @@
   flex: 1 1 30%; /* 項目占據寬度的 30%（適合三列布局） */
   max-width: 250px; /* 控制每個項目的最大寬度 */
   color: #404040;
-  font-style: inter;
+  font-family: Inter, sans-serif;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
   cursor: pointer; /* 滑鼠指針樣式 */
   text-align: left;
   transition: color 0.3s ease; /* 滑鼠懸停效果 */

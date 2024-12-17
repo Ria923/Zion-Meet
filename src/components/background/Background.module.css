@@ -5,6 +5,7 @@
   width: 100%; /* 確保背景區塊佔據整個寬度 */
   height: 100%; /* 確保背景區塊佔據整個高度 */
   z-index: -1; /* 讓背景區塊位於其他元素下方 */
+  background-position: center;
 }
 
 .HeaderHero,
@@ -115,5 +116,13 @@
     display: none;
     padding: 0; /* 移除额外内边距 */
     height: auto; /* 高度自适应 */
+  }
+}
+
+@media screen and (min-width: 1506px) {
+  .Contract {
+    background-image: url(../../assets/imges/hero/herobackgroud.svg);
+    margin-top: 20px;
+    height: 930px; /* Contract 區域的高度 */
   }
 }

@@ -25,14 +25,14 @@
   font-size: 48px;
   color: #404040;
   margin: 0px;
-  font-style: inter;
+  font-family: Inter, sans-serif;
 }
 
 .heroSubtitle {
   font-size: 14px;
   color: #404040;
   margin-top: 5px;
-  font-style: inter;
+  font-family: Inter, sans-serif;
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -116,7 +116,7 @@
     font-size: 32px; /* 可以根據需要調整字型大小 */
     color: #404040;
     margin: 0;
-    font-style: inter;
+    font-family: Inter, sans-serif;
     font-weight: normal;
     padding-top: 5px;
   }
@@ -124,7 +124,7 @@
   .heroSubtitle {
     font-size: 14px;
     color: #404040;
-    font-style: inter;
+    font-family: Inter, sans-serif;
     font-weight: 900;
     margin-top: 25px;
     margin-bottom: 35px;
