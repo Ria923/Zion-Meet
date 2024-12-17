@@ -25,7 +25,9 @@ const ContactUs = () => {
           <p className={Contactusstyle.Contactuscontant}>
             「多機能・高セキュリティ・低コスト」
             <br />
-            全てを兼ね備えたZION-MEETで、これまでの会議体験を一新。
+            全てを兼ね備えたZION-MEETで、
+            <br />
+            これまでの会議体験を一新。
           </p>
         </div>
 
