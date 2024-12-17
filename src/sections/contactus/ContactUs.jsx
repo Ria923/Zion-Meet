@@ -126,7 +126,7 @@ const ContactUs = () => {
 
                 {/* 手機版介紹A */}
                 <div className={Contactusstyle.MobileA}>
-                  <p className={Contactusstyle.MobileAcont}>1人 ¥3,438/月</p>
+                  <p className={Contactusstyle.MobileAFeature}>1人 ¥3,438/月</p>
                   <div className={Contactusstyle.MobileAFeature}>✕</div>
                   <div className={Contactusstyle.MobileAFeature}>✕</div>
                   <div className={Contactusstyle.MobileAFeature}>

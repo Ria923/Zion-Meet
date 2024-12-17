@@ -364,6 +364,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Container {
+    background-image: url(../../assets/imges/hero/herobackgroud.svg);
+    background-size: cover;
+    padding-bottom: 30px;
+  }
   .ContactusContent {
     display: flex;
     flex-direction: column;
@@ -569,25 +574,29 @@
   }
 
   .MobileZionFeature {
-    font-size: 15px;
+    font-size: 12px;
     font-style: Inter, sans-serif;
     font-weight: 700;
     position: relative;
   }
 
+  .MobileAFeature {
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+  }
   .MobileZion .MobileAFeature:nth-child(1) {
     line-height: 20px; /* 400% */
   }
 
   .MobileAFeature:nth-child(2) {
     margin-top: 0px;
-    padding-top: 45px;
+    padding-top: 50px;
     line-height: 20px; /* 400% */
   }
 
   .MobileAFeature:nth-child(3) {
     margin-top: 0px;
-    padding-top: 58px;
+    padding-top: 65px;
     line-height: 20px; /* 400% */
   }
 
@@ -599,7 +608,7 @@
 
   .MobileAFeature:nth-child(5) {
     margin-top: 0px;
-    padding-top: 60px;
+    padding-top: 55px;
     line-height: 20px; /* 400% */
   }
 

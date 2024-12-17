@@ -7,18 +7,76 @@
 .logoImage {
   width: 67px;
 }
+.HunBagermenu {
+  display: none;
+}
+.menu {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .headerLogo {
     display: flex;
-    justify-content: flex-start; /* 保證靠左對齊 */
-    align-items: center; /* 保證垂直居中 */
-    width: 100%; /* 確保寬度為100% */
-    padding: 0px 0px 0px 30px; /* 可選：給予一些左邊距 */
+    justify-content: space-between; /* 左右对齐，logo左边，菜单右边 */
+    align-items: center; /* 垂直居中 */
+    width: 100%; /* 确保宽度为100% */
+    background-color: #ededec;
+    position: fixed;
   }
 
+  /* Logo 样式 */
   .logoImage {
-    width: 50px;
+    width: 30px;
     height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  /* 汉堡菜单容器 */
+  .HunBagermenu {
+    display: block;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  /* 菜单项样式 */
+  .menu {
+    display: none; /* 默认隐藏菜单 */
+    position: absolute;
+    top: 60px; /* 菜单下方的间距 */
+    right: 0; /* 确保菜单靠右对齐 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 给菜单加一个阴影 */
+    width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* 将菜单项对齐到右边 */
+    z-index: 1000; /* 确保菜单在最上层 */
+  }
+  .menu.open {
+    display: block; /* 显示菜单 */
+    background-color: #ededec; /* 设置背景色 */
+    right: 0;
+    top: 60px; /* 修正位置，避免菜单遮挡其他内容 */
+  }
+
+  .menu li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd; /* 菜单项之间的分隔线 */
+  }
+
+  .menu li:hover {
+    background-color: #f4f4f4;
+  }
+
+  /* 菜单标题 */
+  .menu h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 22px;
+    text-align: center;
   }
 }

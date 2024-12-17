@@ -173,6 +173,10 @@
   .featuresContainer {
     margin-top: 0px;
     padding: 0px 0px 0px 20px;
+    background-color: #fff;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 20px;
   }
 
   /* 确保功能区块的排版正确 */

@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
-  margin-bottom: 110px;
+  padding-bottom: 110px;
 }
 
 .Contracttit {
@@ -59,9 +59,12 @@
 }
 @media screen and (max-width: 768px) {
   .ContractContainer {
-    margin-left: 20px;
-    max-height: 600px;
+    background-image: url(../../assets/imges/hero/herobackgroud.svg);
+    background-size: cover;
+    padding-bottom: 30px;
+    margin: 0;
   }
+
   .Contracttit {
     color: #35003b;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,9 +75,15 @@
     display: inline-block;
     white-space: nowrap; /* 禁止內容換行 */
     margin-top: 60px;
+    margin-left: 20px;
   }
   .Contractcnt {
     font-size: 15px;
     font-family: Inter, sans-serif;
+    margin-left: 50px;
+  }
+
+  .ContractButton {
+    margin-left: 50px;
   }
 }

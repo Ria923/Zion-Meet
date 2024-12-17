@@ -16,10 +16,15 @@
     #e9bd49 71%,
     #ecca69 75%
   );
+  position: absolute;
+}
+.footerContainer {
+  position: relative;
 }
 
 .footerSection {
   display: flex;
+  margin-top: 0px;
 }
 
 .footerLogo {
@@ -30,7 +35,7 @@
 }
 
 .Logo {
-  margin-top: 40px;
+  padding-top: 0px;
 }
 
 .zionname {
@@ -46,7 +51,7 @@
   width: 70%; /* 確保容器寬度 */
   display: flex;
   justify-content: center; /* 水平置中 */
-  margin-top: 80px;
+  padding-top: 40px;
 }
 
 .footerList {

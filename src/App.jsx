@@ -37,7 +37,6 @@ function App() {
             <Contract />
           </main>
         </div>
-
         <div className="footer">
           <Footer />
         </div>

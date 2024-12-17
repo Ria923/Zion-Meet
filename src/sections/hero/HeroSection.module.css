@@ -91,6 +91,9 @@
     justify-content: center; /* 垂直居中 */
     align-items: center; /* 水平居中 */
     height: 100%; /* 讓 gridContainer 高度填滿整個視窗 */
+    background-image: url(../../assets/imges/hero/herobackgroud.svg);
+    background-size: cover;
+    padding-bottom: 30px;
   }
 
   .heroSection {
