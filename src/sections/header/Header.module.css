@@ -22,6 +22,7 @@
     width: 100%; /* 确保宽度为100% */
     background-color: #ededec;
     position: fixed;
+    z-index: 998;
   }
 
   /* Logo 样式 */
