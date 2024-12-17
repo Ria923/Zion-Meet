@@ -13,7 +13,7 @@
   margin-top: 100px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Josefin Sans";
+  font-style: inter;
   font-size: 48px;
   font-weight: 700;
 }
@@ -88,7 +88,7 @@
 /* 卡片编号样式 */
 .cardId {
   color: #fff;
-  font-family: "Josefin Sans";
+  font-style: inter;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@
 /* 卡片文本样式 */
 .cardText {
   color: #fff;
-  font-family: "Josefin Sans";
+  font-style: inter;
   font-size: 15px;
   font-weight: 500;
   line-height: 26px;
@@ -138,7 +138,7 @@
     padding-bottom: 40px;
     color: #35003b;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Josefin Sans";
+    font-style: inter;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 4.8px;
@@ -201,7 +201,7 @@
   .cardText {
     color: #fff;
     max-width: 100%;
-    font-family: "Josefin Sans";
+    font-style: inter;
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;

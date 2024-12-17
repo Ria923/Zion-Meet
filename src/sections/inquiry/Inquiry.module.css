@@ -10,7 +10,7 @@
   padding-top: 150px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Josefin Sans";
+  font-style: inter;
   font-weight: 700;
   letter-spacing: 4.8px;
   display: inline-block;
@@ -66,7 +66,7 @@
   justify-content: center;
   align-items: center;
   color: #f5f2d2;
-  font-family: "Josefin Sans";
+  font-style: inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -188,7 +188,7 @@
   .InquiryTitle {
     margin-top: 0;
     padding: 0 0 40px 20px;
-    font-family: "Josefin Sans";
+    font-style: inter;
     text-align: left;
     width: 100%;
     font-size: 20px; /* 增加標題字體大小 */
@@ -222,7 +222,7 @@
     justify-content: center;
     align-items: center;
     color: #f5f2d2;
-    font-family: "Josefin Sans";
+    font-style: inter;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
