@@ -62,11 +62,22 @@
   top: 20px;
 }
 @media screen and (max-width: 768px) {
+  .ContractContainer {
+    margin-left: 20px;
+    max-height: 600px;
+  }
   .Contracttit {
-    margin-top: 20px;
-    text-align: left; /* 保持標題左對齊 */
-    width: 100%; /* 確保標題佔滿寬度 */
-    font-size: 15px;
+    color: #35003b;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
     font-style: inter;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    display: inline-block;
+    white-space: nowrap; /* 禁止內容換行 */
+    margin-top: 60px;
+  }
+  .Contractcnt {
+    font-size: 20px;
   }
 }

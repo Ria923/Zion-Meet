@@ -172,44 +172,128 @@
   top: 30px;
   left: 40px;
 }
-
 @media screen and (max-width: 768px) {
+  .gridContainer {
+    padding: 0;
+    margin: 0;
+  }
+  .InquirySection {
+    padding: 0;
+    margin: 0;
+  }
   .InquiryContent {
     display: flex;
     flex-direction: column;
-    width: 100%; /* 保證父容器佔滿整個寬度 */
-    justify-content: center; /* 垂直居中 */
-    align-items: center; /* 水平居中 */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
   }
+
   .InquiryTitle {
-    margin-top: 20px;
-    text-align: left; /* 保持標題左對齊 */
-    width: 100%; /* 確保標題佔滿寬度 */
-    font-size: 15px;
-    font-style: inter;
+    margin-top: 0;
+    padding: 0 0 40px 20px;
+    text-align: left;
+    width: 100%;
+    font-size: 24px; /* 增加標題字體大小 */
+    font-weight: 700;
+    max-width: 100%;
+    color: #35003b;
+  }
+
+  .Inquirystep {
+    margin: 0;
+  }
+
+  /* STEPItem 样式保持不变 */
+  .StepItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background: none;
+    box-shadow: none;
+  }
+
+  /* STEPNumber 样式保持不变 */
+  .StepNumber {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f2d2;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(112deg, #e6ae20 17.81%, #6d4799 82.19%);
+    position: relative;
+    top: 20px;
+    left: -100px;
+    font-size: 20px;
+  }
+
+  /* StepIcon 样式调整 */
+  .StepIconcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff; /* 为图标底部添加背景 */
+    border-radius: 0px 30px 10px 30px;
+    background-size: 100%;
+    padding: 100px;
+  }
+
+  /* 增大图标 */
+  .StepIcon {
+    position: static;
+    width: 125px; /* 调整图标大小 */
+    height: 125px;
+    margin: 0 auto;
+  }
+
+  /* 标题样式调整，确保 h4 不超出范围 */
+  .StepTitleContainer {
+    text-align: left;
   }
   .TitleStyle1,
   .TitleStyle2,
   .TitleStyle3,
   .TitleStyle4 {
-    color: #000;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     position: static;
+    max-width: 100%; /* 限制最大宽度 */
+    margin: 15px 0px 0px 0px;
+    padding: 0;
   }
 
-  .StepItem {
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    max-width: 100%;
+  }
+  .DescriptionStyle1,
+  .DescriptionStyle2,
+  .DescriptionStyle3,
+  .DescriptionStyle4 {
+    position: static;
+    margin: 0;
+  }
+
+  /* StepDescription 样式 */
+  .StepDescriptionContainer {
     display: flex;
-    justify-content: center; /* 垂直居中 */
     flex-direction: column;
-    align-items: center; /* 水平置中 */
-    border-radius: 0px 30px 10px 30px;
-    background: none;
-    width: 80%;
-    margin: 0px;
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #000;
   }
 }

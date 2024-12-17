@@ -84,7 +84,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* 卡片编号样式 */
@@ -158,6 +158,7 @@
     padding: 0;
     justify-content: flex-start; /* 垂直方向對齊開始 */
     align-items: flex-start; /* 水平方向對齊開始 */
+    margin-left: 20px;
   }
 
   .grid > div:nth-child(1),

@@ -107,7 +107,6 @@
 
 .footer {
   margin-top: 40px;
-
   text-align: center;
   color: #404040;
   font-family: Inter;
@@ -115,4 +114,61 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 786px) {
+  body,
+  html {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 居中图片 */
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .link {
+    margin-top: 0px;
+  }
+  .footerList li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 居中图片 */
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .footerList li,
+  .footerList li:nth-child(3),
+  .footerList li:nth-child(4),
+  .footerList li:nth-child(5) {
+    position: static;
+    flex: none;
+  }
+
+  .Buttonarea {
+    display: none;
+  }
+
+  .footerButton {
+    position: static;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  .copyright {
+    padding-top: 20px;
+  }
 }
