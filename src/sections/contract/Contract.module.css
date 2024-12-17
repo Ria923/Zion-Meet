@@ -49,9 +49,7 @@
   color: #000;
   font-family: Inter;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   max-width: 550px;
 }
 
@@ -76,6 +74,7 @@
     margin-top: 60px;
   }
   .Contractcnt {
-    font-size: 20px;
+    font-size: 15px;
+    font-style: inter;
   }
 }

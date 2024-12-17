@@ -381,11 +381,10 @@
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
     text-align: center; /* 文字水平居中 */
-    width: 80%; /* 確保內容佔滿寬度 */
+    width: 60%; /* 確保內容佔滿寬度 */
     font-size: 15px;
     margin: 20px;
     padding: 20px 20px;
-    white-space: nowrap;
   }
 
   .Comparison {
@@ -598,6 +597,7 @@
   }
 
   .note {
+    font-family: inter;
     position: static;
     padding: 30px;
   }
