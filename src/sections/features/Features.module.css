@@ -167,6 +167,10 @@
   position: relative;
   right: 150px;
 }
+
+.Featuresstitl {
+  display: none; /* Make the image a block-level element */
+}
 /* 响应式设计：最大宽度 768px */
 @media screen and (max-width: 768px) {
   /* 整个功能区块的容器 */
@@ -177,6 +181,8 @@
     background-size: cover;
     padding-bottom: 30px;
     padding-top: 20px;
+    margin: 0;
+    max-width: 100%;
   }
 
   /* 确保功能区块的排版正确 */
@@ -198,6 +204,7 @@
     display: inline-block;
     white-space: nowrap; /* 禁止內容換行 */
     margin-top: 0px;
+    position: absolute;
   }
 
   /* 移除可能影响排版的相对定位 */
@@ -281,5 +288,15 @@
   .divider {
     position: static;
     display: none;
+  }
+
+  .Featuresstitl {
+    display: block; /* Make the image a block-level element */
+    margin-left: auto; /* Push the image to the right */
+    width: 20px;
+    height: auto;
+    position: relative;
+    bottom: 5px;
+    right: 10px;
   }
 }

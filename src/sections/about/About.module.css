@@ -72,11 +72,19 @@
   line-height: 60px;
   letter-spacing: 1.68px;
 }
-
+.Abouttitl {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   body,
   html {
     margin: 0 auto;
+  }
+
+  .Abouticon {
+    display: inline; /* 確保圖片不換行 */
+    vertical-align: middle; /* 圖片與文字垂直對齊 */
+    margin-left: 8px; /* 調整圖片與文字之間的距離 */
   }
 
   .gridContainer {
@@ -92,9 +100,9 @@
     color: #000;
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: 4.8px;
-    line-height: 20px; /* 216.667% */
-    padding-top: 30px;
+    letter-spacing: 3px;
+    line-height: 25px; /* 216.667% */
+    padding-top: 50px;
     font-family: Inter, sans-serif;
   }
 
@@ -108,10 +116,21 @@
     display: inline-block;
     white-space: nowrap; /* 禁止內容換行 */
     margin-top: 60px;
+    position: absolute;
+    top: 20px;
   }
 
   .Abouttit {
     font-family: Inter, sans-serif;
     font-size: 15px;
+  }
+
+  .Abouttitl {
+    display: block; /* Make the image a block-level element */
+    margin-left: auto; /* Push the image to the right */
+    width: 20px;
+    height: auto;
+    position: relative;
+    bottom: 15px;
   }
 }

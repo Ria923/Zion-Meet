@@ -10,6 +10,7 @@ import Point4 from "../../assets/imges/features/point4.svg";
 import Point4Image from "../../assets/imges/features/point4image.png";
 import Point5 from "../../assets/imges/features/point5.svg";
 import Point5Image from "../../assets/imges/features/point5image.png";
+import Featurestitl from "../../assets/imges/features/featurestit.svg";
 
 const featuresData = [
   {
@@ -52,6 +53,13 @@ const featuresData = [
 const Features = () => {
   return (
     <div className={Featuresstyles.featuresContainer}>
+      <div className={Featuresstyles.Featuresstitl} id="Featuress">
+        <img
+          className={Featuresstyles.Featuresstitl}
+          src={Featurestitl}
+          alt="Featuresstitl"
+        />
+      </div>
       <h2 className={Featuresstyles.featuresTitle}>選ばれるポイント</h2>
       {featuresData.map((feature, index) => (
         <section
