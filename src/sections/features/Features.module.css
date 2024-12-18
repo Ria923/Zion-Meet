@@ -228,6 +228,8 @@
     background-color: #e9bd49;
     height: 1.5px;
     width: 70%;
+    position: relative;
+    right: 10px;
     margin-top: 20px;
     align-self: center;
   }
