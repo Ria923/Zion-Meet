@@ -199,7 +199,7 @@
     width: 100%;
     font-size: 20px; /* 增加標題字體大小 */
     font-weight: 700;
-    max-width: 100%;
+    max-width: 93%;
     padding-top: 100px;
     color: #35003b;
   }
@@ -246,7 +246,7 @@
     background: #ffffff; /* 为图标底部添加背景 */
     border-radius: 0px 30px 10px 30px;
     background-size: 100%;
-    padding: 100px;
+    padding: 80px;
   }
 
   /* 增大图标 */

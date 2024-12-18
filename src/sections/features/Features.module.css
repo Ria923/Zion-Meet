@@ -226,7 +226,7 @@
   .featureContent::after {
     content: "";
     background-color: #e9bd49;
-    height: 1.5px;
+    height: 1px;
     width: 70%;
     position: relative;
     right: 15px;

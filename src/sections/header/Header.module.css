@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 768px) {
   .headerLogo {
-    width: 100%; /* 确保宽度为100% */
+    width: 90%; /* 确保宽度为100% */
     position: fixed;
     z-index: 998;
     display: flex;
