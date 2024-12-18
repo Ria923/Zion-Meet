@@ -4,7 +4,7 @@ import StepIcon1 from "../../assets/imges/Inquiry/InquiryIcon1.svg";
 import StepIcon2 from "../../assets/imges/Inquiry/InquiryIcon2.svg";
 import StepIcon3 from "../../assets/imges/Inquiry/InquiryIcon3.svg";
 import StepIcon4 from "../../assets/imges/Inquiry/InquiryIcon4.svg";
-
+import Inquirytitl from "../../assets/imges/Inquiry/Inquirytitl.svg";
 const steps = [
   {
     icon: StepIcon1,
@@ -31,9 +31,18 @@ const steps = [
 const Inquiry = () => (
   <div className={Inquirystyle.gridContainer}>
     <section className={Inquirystyle.InquirySection}>
+      <div className={Inquirystyle.Inquirytitl} id="Inquiry">
+        <img
+          className={Inquirystyle.Inquirytitl}
+          src={Inquirytitl}
+          alt="Inquirytitl"
+        />
+      </div>
       <div className={Inquirystyle.InquiryContent}>
         <h2 className={Inquirystyle.InquiryTitle}>
-          お問い合わせから契約までの流れ
+          お問い合わせから
+          <br />
+          契約までの流れ
         </h2>
       </div>
       <div className={Inquirystyle.Inquirystep}>

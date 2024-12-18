@@ -363,11 +363,16 @@
   display: none;
 }
 
+.ContactUstitl {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .Container {
     background-image: url(../../assets/imges/hero/herobackgroud.svg);
     background-size: cover;
     padding-bottom: 30px;
+    position: relative;
   }
   .ContactusContent {
     display: flex;
@@ -616,5 +621,13 @@
     font-family: Inter, sans-serif;
     position: static;
     padding: 30px;
+  }
+  .ContactUstitl {
+    display: block;
+    margin-right: auto; /* Push the image to the right */
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 5px;
   }
 }

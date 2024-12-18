@@ -131,6 +131,7 @@
     width: 20px;
     height: auto;
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
+    left: 5px;
   }
 }

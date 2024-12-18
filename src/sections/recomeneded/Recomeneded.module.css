@@ -116,6 +116,10 @@
   height: auto;
 }
 
+.Recommendedtitl {
+  display: none;
+}
+
 /* 卡片标题样式 */
 .cardTitle {
   font-size: 1.5rem;
@@ -205,5 +209,18 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
+  }
+  .container {
+    position: relative;
+  }
+
+  .Recommendedtitl {
+    display: block; /* Make the image a block-level element */
+    margin-right: auto; /* Push the image to the right */
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    padding-top: 10px;
   }
 }

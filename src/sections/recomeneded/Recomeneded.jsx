@@ -8,6 +8,7 @@ import Number1 from "../../assets/imges/recomeneded/O1.svg";
 import Number2 from "../../assets/imges/recomeneded/O2.svg";
 import Number3 from "../../assets/imges/recomeneded/O3.svg";
 import Number4 from "../../assets/imges/recomeneded/O4.svg";
+import Recommendedtitl from "../../assets/imges/recomeneded/recommendedtitl.svg";
 
 const Recomeneded = [
   {
@@ -54,36 +55,47 @@ const Recomeneded = [
 
 const RecomenededFeatures = () => {
   return (
-    <div className={RecomenededStyles.container}>
-      <h2 className={RecomenededStyles.RecomenededTitle}>おすすめの機能追加</h2>
-      <div className={RecomenededStyles.grid}>
-        {Recomeneded.map((feature) => (
-          <div
-            key={feature.id}
-            className={RecomenededStyles.card}
-            style={{ backgroundColor: feature.bgColor }}
-          >
-            <span className={RecomenededStyles.cardId}>
-              <img
-                src={feature.image.secondary}
-                alt="Secondary Image"
-                style={{ maxWidth: "50px" }}
-              />
-            </span>
+    <div>
+      <div className={RecomenededStyles.Recommendedtitl} id="Recomedened">
+        <img
+          className={RecomenededStyles.Recommendedtitl}
+          src={Recommendedtitl}
+          alt="Recommendedtitl"
+        />
+      </div>
+      <div className={RecomenededStyles.container}>
+        <h2 className={RecomenededStyles.RecomenededTitle}>
+          おすすめの機能追加
+        </h2>
+        <div className={RecomenededStyles.grid}>
+          {Recomeneded.map((feature) => (
+            <div
+              key={feature.id}
+              className={RecomenededStyles.card}
+              style={{ backgroundColor: feature.bgColor }}
+            >
+              <span className={RecomenededStyles.cardId}>
+                <img
+                  src={feature.image.secondary}
+                  alt="Secondary Image"
+                  style={{ maxWidth: "50px" }}
+                />
+              </span>
 
-            <div className={RecomenededStyles.cardImgarea}>
-              <img
-                src={feature.image.main}
-                alt={feature.title}
-                className={RecomenededStyles.cardImage}
-              />
+              <div className={RecomenededStyles.cardImgarea}>
+                <img
+                  src={feature.image.main}
+                  alt={feature.title}
+                  className={RecomenededStyles.cardImage}
+                />
+              </div>
+              <div className={RecomenededStyles.textarea}>
+                <h3 className={RecomenededStyles.cardTitle}>{feature.title}</h3>
+                <p className={RecomenededStyles.cardText}>{feature.text}</p>
+              </div>
             </div>
-            <div className={RecomenededStyles.textarea}>
-              <h3 className={RecomenededStyles.cardTitle}>{feature.title}</h3>
-              <p className={RecomenededStyles.cardText}>{feature.text}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

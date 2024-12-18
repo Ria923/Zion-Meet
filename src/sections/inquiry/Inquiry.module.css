@@ -167,10 +167,15 @@
   top: 30px;
   left: 40px;
 }
+
+.Inquirytitl {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .gridContainer {
     padding: 0;
     margin: 0;
+    padding-bottom: 20px;
   }
   .InquirySection {
     padding: 0;
@@ -187,6 +192,7 @@
 
   .InquiryTitle {
     margin-top: 0;
+    margin-left: 10px;
     padding: 0 0 40px 20px;
     font-family: Inter, sans-serif;
     text-align: left;
@@ -194,6 +200,7 @@
     font-size: 20px; /* 增加標題字體大小 */
     font-weight: 700;
     max-width: 100%;
+    padding-top: 100px;
     color: #35003b;
   }
 
@@ -266,7 +273,7 @@
   }
 
   h4 {
-    font-family: inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     margin: 0;
   }
@@ -274,7 +281,7 @@
   p {
     margin: 0;
     max-width: 100%;
-    font-family: inter;
+    font-family: Inter, sans-serif;
     font-size: 12px;
     padding: 0;
   }
@@ -295,5 +302,14 @@
     font-size: 14px;
     margin-top: 10px;
     color: #000;
+  }
+
+  .Inquirytitl {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 5px;
+    top: 20px;
   }
 }

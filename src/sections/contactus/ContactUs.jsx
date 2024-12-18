@@ -7,11 +7,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // 引入 swiper 的基本樣式
 import "swiper/css/pagination"; // 引入 pagination 的樣式
 import { Pagination } from "swiper/modules";
+import ContactUstitl from "../../assets/imges/contractus/contractustitl.svg";
 
 const ContactUs = () => {
   return (
     <div className={Contactusstyle.Container}>
       <section className={Contactusstyle.ContactusSection}>
+        <div className={Contactusstyle.ContactUstitl} id="ContactUs">
+          <img
+            className={Contactusstyle.ContactUstitl}
+            src={ContactUstitl}
+            alt="ContactUstitl"
+          />
+        </div>
         <div className={Contactusstyle.ContactusContent}>
           <h1 className={Contactusstyle.ContactusTitle}>
             他社との違い

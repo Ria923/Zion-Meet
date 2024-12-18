@@ -57,12 +57,17 @@
   position: relative;
   top: 20px;
 }
+
+.Contracttitl {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .ContractContainer {
     background-image: url(../../assets/imges/hero/herobackgroud.svg);
     background-size: cover;
     padding-bottom: 30px;
     margin: 0;
+    position: relative;
   }
 
   .Contracttit {
@@ -85,5 +90,13 @@
 
   .ContractButton {
     margin-left: 50px;
+  }
+  .Contracttitl {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 5px;
+    top: 10px;
   }
 }
