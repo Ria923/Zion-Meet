@@ -53,7 +53,7 @@ const featuresData = [
 const Features = () => {
   return (
     <div className={Featuresstyles.featuresContainer}>
-      <div className={Featuresstyles.Featuresstitl} id="Featuress">
+      <div className={Featuresstyles.Featuresstitl} id="MBFeatures">
         <img
           className={Featuresstyles.Featuresstitl}
           src={Featurestitl}

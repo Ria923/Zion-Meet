@@ -13,7 +13,7 @@ const ContactUs = () => {
   return (
     <div className={Contactusstyle.Container}>
       <section className={Contactusstyle.ContactusSection}>
-        <div className={Contactusstyle.ContactUstitl} id="ContactUs">
+        <div className={Contactusstyle.ContactUstitl} id="MBContactUs">
           <img
             className={Contactusstyle.ContactUstitl}
             src={ContactUstitl}

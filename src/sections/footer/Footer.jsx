@@ -22,13 +22,15 @@ const Footer = () => {
 
         <div className={Footerstyles.link}>
           <ul className={Footerstyles.footerList}>
-            <li onClick={() => scrollToSection("About")}>ZION-MEETとは？</li>
-            <li onClick={() => scrollToSection("Features")}>特徴</li>
-            <li onClick={() => scrollToSection("Recomedened")}>
+            <li onClick={() => scrollToSection("MBAbout")}>ZION-MEETとは？</li>
+            <li onClick={() => scrollToSection("MBFeatures")}>特徴</li>
+            <li onClick={() => scrollToSection("MBRecomedened")}>
               おすすめの機能
             </li>
-            <li onClick={() => scrollToSection("ContactUs")}>他社との違い？</li>
-            <li onClick={() => scrollToSection("Inquiry")}>
+            <li onClick={() => scrollToSection("MBContactUs")}>
+              他社との違い？
+            </li>
+            <li onClick={() => scrollToSection("MBInquiry")}>
               問い合わせから契約までの流れ
             </li>
           </ul>

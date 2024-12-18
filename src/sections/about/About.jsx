@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className={Aboutstyle.gridContainer}>
       <section className={Aboutstyle.AboutSection}>
-        <div className={Aboutstyle.Abouttitl} id="About">
+        <div className={Aboutstyle.Abouttitl} id="MBAbout">
           <img
             className={Aboutstyle.Abouttitl}
             src={Abouttitl}

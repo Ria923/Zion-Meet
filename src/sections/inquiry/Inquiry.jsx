@@ -31,7 +31,7 @@ const steps = [
 const Inquiry = () => (
   <div className={Inquirystyle.gridContainer}>
     <section className={Inquirystyle.InquirySection}>
-      <div className={Inquirystyle.Inquirytitl} id="Inquiry">
+      <div className={Inquirystyle.Inquirytitl} id="MBInquiry">
         <img
           className={Inquirystyle.Inquirytitl}
           src={Inquirytitl}

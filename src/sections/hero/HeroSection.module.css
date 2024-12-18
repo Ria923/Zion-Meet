@@ -26,6 +26,7 @@
   color: #404040;
   margin: 0px;
   font-family: Inter, sans-serif;
+  font-weight: 200;
 }
 
 .heroSubtitle {
@@ -33,7 +34,7 @@
   color: #404040;
   margin-top: 5px;
   font-family: Inter, sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 

@@ -56,7 +56,7 @@ const Recomeneded = [
 const RecomenededFeatures = () => {
   return (
     <div>
-      <div className={RecomenededStyles.Recommendedtitl} id="Recomedened">
+      <div className={RecomenededStyles.Recommendedtitl} id="MBRecomedened">
         <img
           className={RecomenededStyles.Recommendedtitl}
           src={Recommendedtitl}

@@ -21,7 +21,6 @@ body {
     "footer footer line";
 
   grid-template-columns: 300px 1fr 8px;
-  height: 100vh;
   width: 100%;
 }
 
@@ -45,6 +44,7 @@ body {
 
 .column {
   grid-area: content;
+  width: 100%;
 }
 
 .gradientColumn {

@@ -10,6 +10,14 @@ const HamburgerMenu = () => {
     document.body.style.overflow = isOpen ? "auto" : "hidden"; // 禁用頁面滾動
   };
 
+  // 滾動到指定區域
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hamburger-menu">
       {/* 漢堡圖標 */}
@@ -21,7 +29,6 @@ const HamburgerMenu = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      {/* 叉叉圖標，當菜單打開時顯示 */}
 
       {/* 菜單內容 */}
       <div className={`menu-items ${isOpen ? "open" : ""}`}>
@@ -32,13 +39,44 @@ const HamburgerMenu = () => {
         )}
 
         <ul className="menuList">
-          <li onClick={() => scrollToSection("About")}>ZION-MEETとは？</li>
-          <li onClick={() => scrollToSection("Features")}>選ばれるポイント</li>
-          <li onClick={() => scrollToSection("Recomedened")}>
+          <li
+            onClick={() => {
+              scrollToSection("MBAbout");
+              toggleMenu();
+            }}
+          >
+            ZION-MEETとは？
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection("MBFeatures");
+              toggleMenu();
+            }}
+          >
+            選ばれるポイント
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection("MBRecomedened");
+              toggleMenu();
+            }}
+          >
             おすすめの機能追加
           </li>
-          <li onClick={() => scrollToSection("ContactUs")}>他社との違い？</li>
-          <li onClick={() => scrollToSection("Inquiry")}>
+          <li
+            onClick={() => {
+              scrollToSection("MBContactUs");
+              toggleMenu();
+            }}
+          >
+            他社との違い？
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection("MBInquiry");
+              toggleMenu();
+            }}
+          >
             問い合わせから契約までの流れ
           </li>
         </ul>

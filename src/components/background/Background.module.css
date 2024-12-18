@@ -79,7 +79,7 @@
   .Inquiry,
   .Contract {
     position: static; /* 取消所有绝对定位 */
-    width: 100%; /* 使每个元素宽度占满 */
+    width: auto; /* 使每个元素宽度占满 */
     height: auto; /* 高度自动适应内容 */
     background: none; /* 取消背景图 */
     background-size: auto; /* 确保背景图不再使用 */

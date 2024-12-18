@@ -58,6 +58,8 @@
     line-height: 3; /* 调整行高 */
     letter-spacing: 1px;
     text-align: center; /* 水平居中 */
+    width: 100%;
+    height: auto;
   }
 
   .menuList li::after {
