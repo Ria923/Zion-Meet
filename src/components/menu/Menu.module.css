@@ -34,9 +34,8 @@
   -webkit-text-stroke-color: rgba(0, 0, 0, 0);
   font-family: "Josefin Sans";
   font-size: 15px;
-  font-style: normal;
+  font-family: Inter, sans-serif;
   font-weight: 700;
-  line-height: normal;
 }
 
 .menuList {
@@ -51,7 +50,7 @@
   color: #35003b;
   font-family: "Josefin Sans";
   font-size: 12px;
-  font-style: normal;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   line-height: 1.5; /* 调整行高 */
   letter-spacing: 1px;
