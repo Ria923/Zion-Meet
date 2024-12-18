@@ -51,7 +51,7 @@
   width: 70%; /* 確保容器寬度 */
   display: flex;
   justify-content: center; /* 水平置中 */
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .footerList {

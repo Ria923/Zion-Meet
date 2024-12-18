@@ -98,6 +98,10 @@ body {
     width: 100%; /* 使這些元素寬度填滿 */
   }
 
+  .header {
+    height: 50px;
+  }
+
   .menu {
     display: none;
   }

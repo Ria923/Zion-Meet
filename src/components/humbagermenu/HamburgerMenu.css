@@ -1,0 +1,103 @@
+.hamburger-menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    position: relative;
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 2.5px;
+    background: linear-gradient(45deg, #e6ae20 0%, #6d4799 100%);
+    border-radius: 2px;
+  }
+
+  .menu-items {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 990;
+    padding-bottom: 20px;
+  }
+
+  .menu-items.open {
+    display: block;
+  }
+
+  .menuList {
+    list-style: none; /* 移除默认项目符号 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+    text-align: center; /* 列表项居中 */
+    margin-top: 40px;
+  }
+
+  .menuList li {
+    padding: 10px 0 0 0; /* 垂直内边距 */
+    color: #35003b;
+    font-family: "Josefin Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3; /* 调整行高 */
+    letter-spacing: 1px;
+    text-align: center; /* 水平居中 */
+  }
+
+  .menuList li::after {
+    content: "•";
+    color: #e6ae20;
+    font-weight: 900;
+    display: block; /* 圆点单独一行 */
+    width: auto;
+    text-align: center; /* 圆点居中 */
+  }
+
+  .menuList li:last-child {
+    padding-bottom: 35px; /* 清除额外的内边距 */
+  }
+
+  .menuList li:last-child::after {
+    content: ""; /* 清除内容 */
+    display: none; /* 隐藏伪元素 */
+  }
+
+  .menuList li {
+    cursor: pointer; /* 當滑鼠懸停時顯示手指符號 */
+    transition: color 0.3s ease; /* 添加過渡效果，使顏色變換更平滑 */
+  }
+
+  .menuList li:hover {
+    color: #e6ae20; /* 當滑鼠懸停時改變文字顏色，這裡可以選擇任何顏色 */
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .close-icon span {
+    background: linear-gradient(45deg, #e6ae20 0%, #6d4799 100%);
+    background-clip: text;
+    color: transparent;
+  }
+}

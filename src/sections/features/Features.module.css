@@ -225,7 +225,7 @@
     align-self: center;
   }
 
-  .featureContent:last-child::after {
+  .feature5 ::after {
     display: none; /* 隱藏最後一個 .featureContent 的 ::after 伪元素 */
   }
 
