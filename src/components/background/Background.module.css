@@ -47,7 +47,7 @@
 
 .Features {
   background-color: #ffffff;
-  height: 2800px; /* Features 區域的高度 */
+  height: 2715px; /* Features 區域的高度 */
 }
 
 .Recommended {
@@ -65,7 +65,8 @@
 
 .Contract {
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
-  height: 100vh; /* Contract 區域的高度 */
+  max-height: 100%; /* Contract 區域的高度 */
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

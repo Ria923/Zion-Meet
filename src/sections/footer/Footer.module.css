@@ -51,7 +51,7 @@
   width: 70%; /* 確保容器寬度 */
   display: flex;
   justify-content: center; /* 水平置中 */
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .footerList {
@@ -120,6 +120,10 @@
   line-height: normal;
 }
 
+.MBlink {
+  display: none;
+}
+
 @media screen and (max-width: 786px) {
   body,
   html {
@@ -143,9 +147,13 @@
     max-width: 100%;
   }
   .link {
+    display: none;
+  }
+  .MBlink {
+    display: block;
     margin-top: 0px;
   }
-  .footerList li {
+  .MBfooterList li {
     display: flex;
     flex-direction: column;
     justify-content: center; /* 居中图片 */
@@ -155,10 +163,10 @@
     font-size: 16px;
   }
 
-  .footerList li,
-  .footerList li:nth-child(3),
-  .footerList li:nth-child(4),
-  .footerList li:nth-child(5) {
+  .MBfooterList li,
+  .MBfooterList li:nth-child(3),
+  .MBfooterList li:nth-child(4),
+  .MBfooterList li:nth-child(5) {
     position: static;
     flex: none;
   }

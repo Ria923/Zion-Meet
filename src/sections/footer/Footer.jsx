@@ -22,6 +22,25 @@ const Footer = () => {
 
         <div className={Footerstyles.link}>
           <ul className={Footerstyles.footerList}>
+            <li onClick={() => scrollToSection("About")}>ZION-MEETとは？</li>
+            <li onClick={() => scrollToSection("Features")}>特徴</li>
+            <li onClick={() => scrollToSection("Recomedened")}>
+              おすすめの機能
+            </li>
+            <li onClick={() => scrollToSection("ContactUs")}>他社との違い？</li>
+            <li onClick={() => scrollToSection("Inquiry")}>
+              問い合わせから契約までの流れ
+            </li>
+          </ul>
+        </div>
+        <div className={Footerstyles.Buttonarea}>
+          <Button href="#" className={Footerstyles.footerButton}>
+            お問い合わせ
+          </Button>
+        </div>
+
+        <div className={Footerstyles.MBlink}>
+          <ul className={Footerstyles.MBfooterList}>
             <li onClick={() => scrollToSection("MBAbout")}>ZION-MEETとは？</li>
             <li onClick={() => scrollToSection("MBFeatures")}>特徴</li>
             <li onClick={() => scrollToSection("MBRecomedened")}>
@@ -34,11 +53,6 @@ const Footer = () => {
               問い合わせから契約までの流れ
             </li>
           </ul>
-        </div>
-        <div className={Footerstyles.Buttonarea}>
-          <Button href="#" className={Footerstyles.footerButton}>
-            お問い合わせ
-          </Button>
         </div>
       </section>
 

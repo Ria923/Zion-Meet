@@ -25,8 +25,7 @@ const About = () => {
           </h2>
 
           <p className={Aboutstyle.Aboutcontant}>
-            ZION-MEETは、シンプルで効率的な会議システム。
-            豊富な機能を低コストで提供し、スムーズなコミュニケーションを実現します。
+            ZION-MEETはシンプルで効率的な会議システムで、豊富な機能を低コストで提供しスムーズなコミュニケーションを実現します。
           </p>
         </div>
       </section>

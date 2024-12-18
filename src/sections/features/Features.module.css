@@ -203,8 +203,8 @@
     letter-spacing: 4.8px;
     display: inline-block;
     white-space: nowrap; /* 禁止內容換行 */
-    margin-top: 0px;
-    position: absolute;
+    margin-top: 30px;
+    position: relative;
   }
 
   /* 移除可能影响排版的相对定位 */
@@ -218,7 +218,7 @@
     flex-direction: column;
     justify-content: center; /* 居中图片 */
     align-items: left;
-    padding: 10px 0px 0px 10px;
+    padding: 30px 0px 0px 10px;
     width: 100%; /* 确保内容区域宽度为100% */
     position: static; /* 移除相对定位 */
   }
@@ -297,8 +297,7 @@
     margin-left: auto; /* Push the image to the right */
     width: 20px;
     height: auto;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
     right: 5px;
   }
 }

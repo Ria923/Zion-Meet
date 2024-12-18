@@ -45,6 +45,8 @@ body {
 
 .column {
   grid-area: content;
+  max-width: 100%;
+  margin: 0;
 }
 
 .gradientColumn {
@@ -96,6 +98,10 @@ body {
   .footer,
   .column {
     width: 100%; /* 使這些元素寬度填滿 */
+  }
+
+  .column {
+    height: 100%;
   }
 
   .header {
