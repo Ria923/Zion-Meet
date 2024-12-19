@@ -12,16 +12,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.app {
+  margin: 0;
+  padding: 0;
+}
 .gridContainer {
   display: grid;
   grid-template-areas:
     "header header line"
-    "menu content line"
+    "content content line"
     "footer footer line";
 
   grid-template-columns: 300px 1fr 8px;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -38,15 +43,16 @@ body {
 }
 
 .menu {
-  grid-area: menu;
   width: 300px;
-  margin-left: 35px;
+  padding-left: 35px;
 }
 
 .column {
   grid-area: content;
   max-width: 100%;
+  position: relative;
   margin: 0;
+  padding: 0;
 }
 
 .gradientColumn {
@@ -85,7 +91,7 @@ body {
   .gridContainer {
     display: flex;
     flex-direction: column; /* 垂直排列 */
-    max-width: 768px;
+    max-width: 765px;
     height: 100%;
   }
 
@@ -106,10 +112,6 @@ body {
 
   .header {
     height: 50px;
-  }
-
-  .menu {
-    display: none;
   }
 
   .gradientColumn {

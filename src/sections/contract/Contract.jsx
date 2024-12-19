@@ -13,6 +13,14 @@ const Contract = () => {
           alt="Contracttitl"
         />
       </div>
+
+      <div className={ContractStyle.PCContracttitl} id="PCContract">
+        <img
+          className={ContractStyle.PCContracttitl}
+          src={Contracttitl}
+          alt="Contracttitl"
+        />
+      </div>
       <div className={ContractStyle.Contracttit}>お問い合わせ</div>
 
       <p className={ContractStyle.Contractcnt}>

@@ -38,6 +38,13 @@ const Inquiry = () => (
           alt="Inquirytitl"
         />
       </div>
+      <div className={Inquirystyle.PCInquirytitl} id="PCInquiry">
+        <img
+          className={Inquirystyle.PCInquirytitl}
+          src={Inquirytitl}
+          alt="Inquirytitl"
+        />
+      </div>
       <div className={Inquirystyle.InquiryContent}>
         <h2 className={Inquirystyle.InquiryTitle}>
           お問い合わせから

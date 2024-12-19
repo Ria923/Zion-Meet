@@ -2,10 +2,18 @@ import React from "react";
 import HeroSectionstyles from "./HeroSection.module.css";
 import Button from "../../components/button/Button";
 import mainImage from "../../assets/imges/hero/maincomputer.svg";
+import logoImage from "../../assets/imges/header/LOGO.png";
 
 const HeroSection = () => {
   return (
     <div className={HeroSectionstyles.gridContainer}>
+      <div className={HeroSectionstyles.headerLogo}>
+        <img
+          className={HeroSectionstyles.logoImage}
+          src={logoImage}
+          alt="LOGO"
+        />
+      </div>
       <section className={HeroSectionstyles.heroSection}>
         <div className={HeroSectionstyles.heroContent}>
           <h1 className={HeroSectionstyles.heroTitle}>

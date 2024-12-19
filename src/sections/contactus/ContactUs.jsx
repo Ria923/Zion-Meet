@@ -20,6 +20,13 @@ const ContactUs = () => {
             alt="ContactUstitl"
           />
         </div>
+        <div className={Contactusstyle.PCContactUstitl} id="PCContactUs">
+          <img
+            className={Contactusstyle.PCContactUstitl}
+            src={ContactUstitl}
+            alt="ContactUstitl"
+          />
+        </div>
         <div className={Contactusstyle.ContactusContent}>
           <h1 className={Contactusstyle.ContactusTitle}>
             他社との違い

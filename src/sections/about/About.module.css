@@ -1,13 +1,18 @@
 .gridContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 150px 20px;
+  padding-left: 0px;
+  padding-top: 100px;
   position: relative; /* 為內部元素提供相對定位基準 */
+  height: 100vh;
+  background-image: url(../../assets/imges/about/aboutbackground.svg);
+  margin-top: 40px;
+}
+.AboutSection {
+  padding-left: 300px;
 }
 
 /* h1 標題樣式 */
 .AboutTitle {
-  margin-top: 280px;
+  padding-top: 100px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Inter, sans-serif;
@@ -61,9 +66,9 @@
   margin-left: 8px; /* 調整圖片與文字之間的距離 */
 }
 
-.Aboutcontant {
+.AboutContent {
+  position: relative;
   width: 919px;
-  height: 147px;
   flex-shrink: 0;
   color: #404040;
   font-family: Inter, sans-serif;
@@ -72,19 +77,37 @@
   line-height: 60px;
   letter-spacing: 1.68px;
 }
+
 .Abouttitl {
   display: none;
+}
+
+.AbouttitlPC {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 40px;
 }
 @media screen and (max-width: 768px) {
   body,
   html {
     margin: 0 auto;
   }
-
+  .AbouttitlPC {
+    display: none;
+  }
+  .AboutSection {
+    padding-left: 10px;
+  }
+  .AboutContent {
+    max-width: 500px;
+  }
   .Abouticon {
     display: inline; /* 確保圖片不換行 */
     vertical-align: middle; /* 圖片與文字垂直對齊 */
     margin-left: 8px; /* 調整圖片與文字之間的距離 */
+    padding-bottom: 0;
   }
 
   .gridContainer {
@@ -102,11 +125,14 @@
     font-weight: 500;
     letter-spacing: 3px;
     line-height: 20px; /* 216.667% */
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: "Inter", "sans-serif";
+    padding-top: 200px;
+    width: 500px;
   }
 
   .AboutTitle {
+    padding: 10px;
     color: #35003b;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;

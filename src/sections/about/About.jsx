@@ -14,6 +14,13 @@ const About = () => {
             alt="Abouttitl"
           />
         </div>
+        <div className={Aboutstyle.AbouttitlPC} id="PCAbout">
+          <img
+            className={Aboutstyle.AbouttitlPC}
+            src={Abouttitl}
+            alt="Abouttitl"
+          />
+        </div>
         <div className={Aboutstyle.AboutContent}>
           <h2 className={Aboutstyle.AboutTitle}>
             ZION-MEET <span className={Aboutstyle.Abouttit}>とは</span>

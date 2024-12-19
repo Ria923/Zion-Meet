@@ -15,18 +15,16 @@ import GlobalBackground from "./components/background/Background";
 function App() {
   return (
     <div className="app">
-      <GlobalBackground />
       <div className="gridContainer">
-        <div className="gradientColumn"></div>
         <div className="header">
           <Header />
         </div>
 
-        <div className="menu">
-          <Menu />
-        </div>
-
         <div className="column">
+          <div className="menu">
+            <Menu />
+          </div>
+
           <main>
             <HeroSection />
             <About />
@@ -37,6 +35,7 @@ function App() {
             <Contract />
           </main>
         </div>
+        <div className="gradientColumn"></div>
         <div className="footer">
           <Footer />
         </div>

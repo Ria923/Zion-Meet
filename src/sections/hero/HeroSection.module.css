@@ -1,10 +1,22 @@
 /*----------------------------------------
 	Hero Section with Overlapping Effect
 ----------------------------------------*/
+.headerLogo {
+  width: auto;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 400px;
+}
+
+.logoImage {
+  width: 67px;
+}
 
 .gridContainer {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-left: 300px;
+  background-image: url(../../assets/imges/hero/herobackgroud.svg);
+  height: 1024px;
+  background-size: cover; /* 確保背景圖片覆蓋容器 */
 }
 
 .heroSection {
@@ -27,6 +39,7 @@
   margin: 0px;
   font-family: Inter, sans-serif;
   font-weight: 200;
+  width: 480px;
 }
 
 .heroSubtitle {
@@ -85,6 +98,10 @@
   html {
     margin: 0 auto;
   }
+  .headerLogo,
+  .logoImage {
+    display: none;
+  }
 
   .gridContainer {
     display: flex;
@@ -94,7 +111,7 @@
     height: 100%; /* 讓 gridContainer 高度填滿整個視窗 */
     background-image: url(../../assets/imges/hero/herobackgroud.svg);
     background-size: cover;
-    padding-bottom: 30px;
+    padding: 0;
   }
 
   .heroSection {

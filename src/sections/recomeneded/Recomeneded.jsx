@@ -63,7 +63,15 @@ const RecomenededFeatures = () => {
           alt="Recommendedtitl"
         />
       </div>
+
       <div className={RecomenededStyles.container}>
+        <div className={RecomenededStyles.PCRecommendedtitl} id="PCRecomedened">
+          <img
+            className={RecomenededStyles.PCRecommendedtitl}
+            src={Recommendedtitl}
+            alt="Recommendedtitl"
+          />
+        </div>
         <h2 className={RecomenededStyles.RecomenededTitle}>
           おすすめの機能追加
         </h2>

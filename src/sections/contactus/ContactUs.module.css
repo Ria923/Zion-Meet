@@ -1,11 +1,14 @@
 .Container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-image: url(../../assets/imges/hero/herobackgroud.svg);
+  height: 1024px;
+  background-size: cover; /* 確保背景圖片覆蓋容器 */
+  position: relative;
   padding: 40px 20px;
 }
 
 .ContactusTitle {
-  margin-top: 250px;
+  padding-left: 300px;
+  margin-top: 150px;
   color: #35003b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-style: Inter, sans-serif;
@@ -42,16 +45,23 @@
 }
 
 .Contactuscontant {
+  padding-left: 300px;
   color: #404040;
   font-style: Inter, sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 24px;
-  width: 400px;
   text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+br {
+  display: none;
 }
 
 .Comparison {
+  padding-left: 300px;
   margin-top: 80px;
   display: flex;
   gap: 0 25px;
@@ -120,7 +130,7 @@
 
 .Staricon1 img {
   position: relative;
-  left: 20px;
+  left: 18px;
   top: 30px;
   width: 12px;
   height: auto;
@@ -129,19 +139,19 @@
   width: 17px;
   height: auto;
   position: relative;
-  left: 18px;
+  left: 16px;
   top: 40px;
 }
 
 .Niceicon {
   position: relative;
-  left: 25px;
+  left: 20px;
   top: 15px;
 }
 
 .ZionCardtit {
   position: relative;
-  left: 25px;
+  left: 16px;
   color: #6d489a;
   font-size: 24px;
   font-weight: 800;
@@ -357,6 +367,7 @@
   padding-top: 15px;
   position: relative;
   left: 205px;
+  padding-left: 300px;
 }
 
 .MobileSwiper {
@@ -367,12 +378,26 @@
   display: none;
 }
 
+.PCContactUstitl {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  padding-right: 40px;
+}
+
 @media screen and (max-width: 768px) {
+  br {
+    display: block;
+  }
+  .PCContactUstitl {
+    display: none;
+  }
   .Container {
     background-image: url(../../assets/imges/hero/herobackgroud.svg);
     background-size: cover;
     padding-bottom: 30px;
     position: relative;
+    padding: 10px;
   }
   .ContactusContent {
     display: flex;
@@ -380,6 +405,7 @@
     width: 100%; /* 保證父容器佔滿整個寬度 */
     justify-content: center; /* 垂直居中 */
     align-items: center; /* 水平居中 */
+    padding: 10px;
   }
 
   .MobileSwiper {
@@ -392,6 +418,7 @@
     width: 100%; /* 確保標題佔滿寬度 */
     font-size: 20px;
     font-style: Inter, sans-serif;
+    padding: 10px;
   }
 
   .Contactuscontant {
@@ -400,7 +427,8 @@
     font-size: 15px;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-weight: 200;
+    font-weight: 500;
+    padding: 10px;
     font-family: Inter, sans-serif;
   }
 

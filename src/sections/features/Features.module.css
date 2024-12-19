@@ -1,10 +1,10 @@
 /* 整个功能区块的容器 */
 .featuresContainer {
-  margin-top: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  margin-bottom: 80px;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 300px;
+  padding-bottom: 80px;
+  background-image: url(../../assets/imges/hero/herobackgroud.svg);
 }
 
 /* 标题样式 */
@@ -16,6 +16,15 @@
   font-family: Inter, sans-serif;
   font-size: 48px;
   font-weight: 700;
+}
+
+.FeaturesstitlPC {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 40px;
+  padding-right: 40px;
 }
 
 /* 标题下方的装饰线 */
@@ -173,6 +182,9 @@
 }
 /* 响应式设计：最大宽度 768px */
 @media screen and (max-width: 768px) {
+  .FeaturesstitlPC {
+    display: none;
+  }
   /* 整个功能区块的容器 */
   .featuresContainer {
     margin-top: 0px;

@@ -1,12 +1,7 @@
 .headerLogo {
-  width: auto;
-  margin-top: 30px;
-  justify-content: center;
+  display: none;
 }
 
-.logoImage {
-  width: 67px;
-}
 .HunBagermenu {
   display: none;
 }
@@ -16,7 +11,7 @@
 
 @media screen and (max-width: 768px) {
   .headerLogo {
-    width: 90%; /* 确保宽度为100% */
+    width: 95%; /* 确保宽度为100% */
     position: fixed;
     z-index: 998;
     display: flex;
@@ -30,6 +25,7 @@
     height: auto;
     padding-top: 10px;
     margin-left: 20px;
+    display: block;
   }
 
   .HamburgerMenu {

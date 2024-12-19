@@ -60,6 +60,14 @@ const Features = () => {
           alt="Featuresstitl"
         />
       </div>
+
+      <div className={Featuresstyles.FeaturesstitlPC} id="PCFeatures">
+        <img
+          className={Featuresstyles.FeaturesstitlPC}
+          src={Featurestitl}
+          alt="Featuresstitl"
+        />
+      </div>
       <h2 className={Featuresstyles.featuresTitle}>選ばれるポイント</h2>
       {featuresData.map((feature, index) => (
         <section
