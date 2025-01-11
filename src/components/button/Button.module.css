@@ -1,3 +1,4 @@
+/* 基本按鈕樣式 */
 .button {
   background: linear-gradient(45deg, #67438f, #dda927);
   color: #ededec;
@@ -10,8 +11,22 @@
   cursor: pointer;
   text-decoration: none;
   padding: 15px 15px 15px 18px;
+  transition: transform 0.2s ease, background 0.3s ease; /* 平滑過渡 */
 }
 
+/* 點擊時縮小 */
+.clicked {
+  transform: scale(0.9); /* 縮小到 90% */
+  background: linear-gradient(45deg, #dda927, #67438f); /* 反轉背景顏色 */
+}
+
+/* 按鈕 hover 效果 */
+.button:hover {
+  transform: scale(1.05); /* 稍微放大 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加陰影 */
+}
+
+/* 按鈕圖標樣式 */
 .icon {
   margin-left: 5px;
   margin-right: 5px; /* 與文字的間距 */

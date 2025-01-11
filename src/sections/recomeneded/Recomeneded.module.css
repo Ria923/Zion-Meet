@@ -4,7 +4,7 @@
 
 .container {
   padding-top: 40px;
-  padding-left: 300px;
+  padding-left: 25%;
   padding: 40px 20px;
   position: relative;
 }
@@ -23,7 +23,7 @@
   font-style: inter;
   font-size: 48px;
   font-weight: 700;
-  padding-left: 300px;
+  padding-left: 25%;
 }
 
 .RecomenededTitle::after {
@@ -58,7 +58,7 @@
   grid-template-rows: repeat(2, 900px); /* 两行，行高自动 */
   gap: 0 15px; /* 网格项之间的间距 */
   padding: 0px 0px 0px 80px;
-  padding-left: 300px;
+  padding-left: 25%;
 }
 
 .grid > div:nth-child(1) {

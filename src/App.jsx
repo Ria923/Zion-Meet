@@ -10,7 +10,6 @@ import Contract from "./sections/contract/Contract";
 import ContactUs from "./sections/contactus/ContactUs";
 import Inquiry from "./sections/inquiry/Inquiry";
 import Footer from "./sections/footer/Footer";
-import GlobalBackground from "./components/background/Background";
 
 function App() {
   return (

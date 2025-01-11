@@ -1,8 +1,7 @@
 .ContractContainer {
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
   background-size: cover; /* 確保背景圖片覆蓋容器 */
-
-  padding-left: 300px;
+  padding-left: 25%;
   height: 100vh;
   padding-bottom: 60px;
   position: relative;

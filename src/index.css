@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .gridContainer {
   display: grid;
   grid-template-areas:
@@ -23,7 +24,7 @@ body {
     "content content line"
     "footer footer line";
 
-  grid-template-columns: 300px 1fr 8px;
+  grid-template-columns: 1fr 2fr 8px;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -43,8 +44,8 @@ body {
 }
 
 .menu {
-  width: 300px;
-  padding-left: 35px;
+  width: 33%;
+  padding-left: 3%;
 }
 
 .column {

@@ -5,7 +5,7 @@
   width: auto;
   justify-content: center;
   padding-top: 20px;
-  padding-left: 400px;
+  padding-left: 30%;
 }
 
 .logoImage {
@@ -13,10 +13,10 @@
 }
 
 .gridContainer {
-  padding-left: 300px;
+  padding-left: 25%;
   background-image: url(../../assets/imges/hero/herobackgroud.svg);
-  height: 1024px;
-  background-size: cover; /* 確保背景圖片覆蓋容器 */
+  height: 125vh;
+  background-size: cover;
 }
 
 .heroSection {
@@ -49,6 +49,19 @@
   font-family: Inter, sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+.heroTitle,
+.heroSubtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+
+/* 淡入效果 */
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .heroSubtitle::after {
@@ -85,7 +98,7 @@
 }
 
 .mainImage {
-  width: 100%; /* 圖片寬度自動填滿容器 */
+  width: 90%; /* 圖片寬度自動填滿容器 */
   height: auto; /* 自動調整高度以保持比例 */
   object-fit: contain; /* 確保圖片不會被裁切，完全顯示 */
   position: relative; /* 確保定位正常 */
@@ -93,6 +106,7 @@
   top: 20px;
   z-index: 1; /* 確保圖片層級低於文字 */
 }
+
 @media screen and (max-width: 768px) {
   body,
   html {
